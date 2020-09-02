@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:right-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -171,10 +170,10 @@ F 3 "~" H 5050 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L Switch:SW_Push SWRST1
 U 1 1 5DECA090
 P 4450 1200
-F 0 "SW2" V 4404 1348 50  0000 L CNN
+F 0 "SWRST1" V 4404 1348 50  0000 L CNN
 F 1 "RESET" V 4495 1348 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 4450 1400 50  0001 C CNN
 F 3 "" H 4450 1400 50  0001 C CNN
@@ -205,10 +204,10 @@ Wire Wire Line
 	4450 1000 5050 1000
 Connection ~ 4450 1000
 $Comp
-L Switch:SW_Push SW1
+L Switch:SW_Push SWBOOT1
 U 1 1 5DECE105
 P 4200 1600
-F 0 "SW1" H 4200 1415 50  0000 C CNN
+F 0 "SWBOOT1" H 4200 1415 50  0000 C CNN
 F 1 "BOOT" H 4200 1506 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_SPST_CK_RS282G05A3" H 4200 1800 50  0001 C CNN
 F 3 "" H 4200 1800 50  0001 C CNN
@@ -354,104 +353,6 @@ Wire Wire Line
 	4000 900  5700 900 
 Text GLabel 4000 900  0    50   Input ~ 0
 3.3V
-$Comp
-L Diode:1N4148WS D11
-U 1 1 5DF621C8
-P 1000 3350
-F 0 "D11" H 1000 3615 50  0000 C CNN
-F 1 "D3.3" H 1000 3524 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 3350 50  0001 C CNN
-F 3 "~" H 1000 3350 50  0001 C CNN
-	1    1000 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW9
-U 1 1 5DF621CF
-P 1350 3350
-F 0 "SW9" H 1350 3635 50  0000 C CNN
-F 1 "SW_Push" H 1350 3544 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 3550 50  0001 C CNN
-F 3 "" H 1350 3550 50  0001 C CNN
-	1    1350 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D12
-U 1 1 5DF621D6
-P 1000 3750
-F 0 "D12" H 1000 4015 50  0000 C CNN
-F 1 "D4.3" H 1000 3924 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 3750 50  0001 C CNN
-F 3 "~" H 1000 3750 50  0001 C CNN
-	1    1000 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW10
-U 1 1 5DF621DD
-P 1350 3750
-F 0 "SW10" H 1350 4035 50  0000 C CNN
-F 1 "SW_Push" H 1350 3944 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 3950 50  0001 C CNN
-F 3 "" H 1350 3950 50  0001 C CNN
-	1    1350 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D10
-U 1 1 5DF621F2
-P 1000 2950
-F 0 "D10" H 1000 3215 50  0000 C CNN
-F 1 "D2.3" H 1000 3124 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 2950 50  0001 C CNN
-F 3 "~" H 1000 2950 50  0001 C CNN
-	1    1000 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW8
-U 1 1 5DF621F9
-P 1350 2950
-F 0 "SW8" H 1350 3235 50  0000 C CNN
-F 1 "SW_Push" H 1350 3144 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 3150 50  0001 C CNN
-F 3 "" H 1350 3150 50  0001 C CNN
-	1    1350 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D9
-U 1 1 5DF62200
-P 1000 2550
-F 0 "D9" H 1000 2815 50  0000 C CNN
-F 1 "D1.3" H 1000 2724 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 2550 50  0001 C CNN
-F 3 "~" H 1000 2550 50  0001 C CNN
-	1    1000 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW7
-U 1 1 5DF62207
-P 1350 2550
-F 0 "SW7" H 1350 2835 50  0000 C CNN
-F 1 "SW_Push" H 1350 2744 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 2750 50  0001 C CNN
-F 3 "" H 1350 2750 50  0001 C CNN
-	1    1350 2550
-	1    0    0    -1  
-$EndComp
-Text GLabel 1550 2550 2    50   Input ~ 0
-COL3
-Text GLabel 850  2950 0    50   Input ~ 0
-ROW2
-Text GLabel 850  3350 0    50   Input ~ 0
-ROW3
-Text GLabel 850  3750 0    50   Input ~ 0
-ROW4
-Text GLabel 850  2550 0    50   Input ~ 0
-ROW1
 Text GLabel 5400 2500 0    50   Input ~ 0
 ROW1
 Text GLabel 5400 2600 0    50   Input ~ 0
@@ -460,490 +361,6 @@ Text GLabel 5400 2700 0    50   Input ~ 0
 ROW3
 Text GLabel 5400 3500 0    50   Input ~ 0
 ROW4
-Wire Wire Line
-	1550 2550 1550 2950
-Wire Wire Line
-	1550 2950 1550 3350
-Connection ~ 1550 2950
-Wire Wire Line
-	1550 3350 1550 3750
-Connection ~ 1550 3350
-$Comp
-L Diode:1N4148WS D25
-U 1 1 5DFE23D1
-P 2350 3350
-F 0 "D25" H 2350 3615 50  0000 C CNN
-F 1 "D3.4" H 2350 3524 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 3350 50  0001 C CNN
-F 3 "~" H 2350 3350 50  0001 C CNN
-	1    2350 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW23
-U 1 1 5DFE23D8
-P 2700 3350
-F 0 "SW23" H 2700 3635 50  0000 C CNN
-F 1 "SW_Push" H 2700 3544 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 3550 50  0001 C CNN
-F 3 "" H 2700 3550 50  0001 C CNN
-	1    2700 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D26
-U 1 1 5DFE23DF
-P 2350 3750
-F 0 "D26" H 2350 4015 50  0000 C CNN
-F 1 "D4.4" H 2350 3924 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 3750 50  0001 C CNN
-F 3 "~" H 2350 3750 50  0001 C CNN
-	1    2350 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW24
-U 1 1 5DFE23E6
-P 2700 3750
-F 0 "SW24" H 2700 4035 50  0000 C CNN
-F 1 "SW_Push" H 2700 3944 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 3950 50  0001 C CNN
-F 3 "" H 2700 3950 50  0001 C CNN
-	1    2700 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D24
-U 1 1 5DFE23FB
-P 2350 2950
-F 0 "D24" H 2350 3215 50  0000 C CNN
-F 1 "D2.4" H 2350 3124 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 2950 50  0001 C CNN
-F 3 "~" H 2350 2950 50  0001 C CNN
-	1    2350 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW22
-U 1 1 5DFE2402
-P 2700 2950
-F 0 "SW22" H 2700 3235 50  0000 C CNN
-F 1 "SW_Push" H 2700 3144 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 3150 50  0001 C CNN
-F 3 "" H 2700 3150 50  0001 C CNN
-	1    2700 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D23
-U 1 1 5DFE2409
-P 2350 2550
-F 0 "D23" H 2350 2815 50  0000 C CNN
-F 1 "D1.4" H 2350 2724 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 2550 50  0001 C CNN
-F 3 "~" H 2350 2550 50  0001 C CNN
-	1    2350 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW21
-U 1 1 5DFE2410
-P 2700 2550
-F 0 "SW21" H 2700 2835 50  0000 C CNN
-F 1 "SW_Push" H 2700 2744 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 2750 50  0001 C CNN
-F 3 "" H 2700 2750 50  0001 C CNN
-	1    2700 2550
-	1    0    0    -1  
-$EndComp
-Text GLabel 2900 2550 2    50   Input ~ 0
-COL4
-Text GLabel 2200 2950 0    50   Input ~ 0
-ROW2
-Text GLabel 2200 3350 0    50   Input ~ 0
-ROW3
-Text GLabel 2200 3750 0    50   Input ~ 0
-ROW4
-Text GLabel 2200 2550 0    50   Input ~ 0
-ROW1
-Wire Wire Line
-	2900 2550 2900 2950
-Wire Wire Line
-	2900 2950 2900 3350
-Connection ~ 2900 2950
-Wire Wire Line
-	2900 3350 2900 3750
-Connection ~ 2900 3350
-$Comp
-L Diode:1N4148WS D35
-U 1 1 5DFE3E8A
-P 3700 3350
-F 0 "D35" H 3700 3615 50  0000 C CNN
-F 1 "D3.5" H 3700 3524 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 3350 50  0001 C CNN
-F 3 "~" H 3700 3350 50  0001 C CNN
-	1    3700 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW33
-U 1 1 5DFE3E91
-P 4050 3350
-F 0 "SW33" H 4050 3635 50  0000 C CNN
-F 1 "SW_Push" H 4050 3544 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 4050 3550 50  0001 C CNN
-F 3 "" H 4050 3550 50  0001 C CNN
-	1    4050 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D36
-U 1 1 5DFE3E98
-P 3700 3750
-F 0 "D36" H 3700 4015 50  0000 C CNN
-F 1 "D4.5" H 3700 3924 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 3750 50  0001 C CNN
-F 3 "~" H 3700 3750 50  0001 C CNN
-	1    3700 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW34
-U 1 1 5DFE3E9F
-P 4050 3750
-F 0 "SW34" H 4050 4035 50  0000 C CNN
-F 1 "SW_Push" H 4050 3944 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 4050 3950 50  0001 C CNN
-F 3 "" H 4050 3950 50  0001 C CNN
-	1    4050 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D34
-U 1 1 5DFE3EB4
-P 3700 2950
-F 0 "D34" H 3700 3215 50  0000 C CNN
-F 1 "D2.5" H 3700 3124 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 2950 50  0001 C CNN
-F 3 "~" H 3700 2950 50  0001 C CNN
-	1    3700 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW32
-U 1 1 5DFE3EBB
-P 4050 2950
-F 0 "SW32" H 4050 3235 50  0000 C CNN
-F 1 "SW_Push" H 4050 3144 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 4050 3150 50  0001 C CNN
-F 3 "" H 4050 3150 50  0001 C CNN
-	1    4050 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D33
-U 1 1 5DFE3EC2
-P 3700 2550
-F 0 "D33" H 3700 2815 50  0000 C CNN
-F 1 "D1.5" H 3700 2724 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 2550 50  0001 C CNN
-F 3 "~" H 3700 2550 50  0001 C CNN
-	1    3700 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW31
-U 1 1 5DFE3EC9
-P 4050 2550
-F 0 "SW31" H 4050 2835 50  0000 C CNN
-F 1 "SW_Push" H 4050 2744 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 4050 2750 50  0001 C CNN
-F 3 "" H 4050 2750 50  0001 C CNN
-	1    4050 2550
-	1    0    0    -1  
-$EndComp
-Text GLabel 4250 2550 2    50   Input ~ 0
-COL5
-Text GLabel 3550 2950 0    50   Input ~ 0
-ROW2
-Text GLabel 3550 3350 0    50   Input ~ 0
-ROW3
-Text GLabel 3550 3750 0    50   Input ~ 0
-ROW4
-Text GLabel 3550 2550 0    50   Input ~ 0
-ROW1
-Wire Wire Line
-	4250 2550 4250 2950
-Wire Wire Line
-	4250 2950 4250 3350
-Connection ~ 4250 2950
-Wire Wire Line
-	4250 3350 4250 3750
-Connection ~ 4250 3350
-$Comp
-L Diode:1N4148WS D7
-U 1 1 5DFE6378
-P 1000 1650
-F 0 "D7" H 1000 1915 50  0000 C CNN
-F 1 "D3.1" H 1000 1824 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 1650 50  0001 C CNN
-F 3 "~" H 1000 1650 50  0001 C CNN
-	1    1000 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW5
-U 1 1 5DFE637F
-P 1350 1650
-F 0 "SW5" H 1350 1935 50  0000 C CNN
-F 1 "SW_Push" H 1350 1844 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 1850 50  0001 C CNN
-F 3 "" H 1350 1850 50  0001 C CNN
-	1    1350 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D6
-U 1 1 5DFE63A2
-P 1000 1250
-F 0 "D6" H 1000 1515 50  0000 C CNN
-F 1 "D2.1" H 1000 1424 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 1250 50  0001 C CNN
-F 3 "~" H 1000 1250 50  0001 C CNN
-	1    1000 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW4
-U 1 1 5DFE63A9
-P 1350 1250
-F 0 "SW4" H 1350 1535 50  0000 C CNN
-F 1 "SW_Push" H 1350 1444 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 1450 50  0001 C CNN
-F 3 "" H 1350 1450 50  0001 C CNN
-	1    1350 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D5
-U 1 1 5DFE63B0
-P 1000 850
-F 0 "D5" H 1000 1115 50  0000 C CNN
-F 1 "D1.1" H 1000 1024 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 850 50  0001 C CNN
-F 3 "~" H 1000 850 50  0001 C CNN
-	1    1000 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW3
-U 1 1 5DFE63B7
-P 1350 850
-F 0 "SW3" H 1350 1135 50  0000 C CNN
-F 1 "SW_Push" H 1350 1044 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1350 1050 50  0001 C CNN
-F 3 "" H 1350 1050 50  0001 C CNN
-	1    1350 850 
-	1    0    0    -1  
-$EndComp
-Text GLabel 1550 850  2    50   Input ~ 0
-COL1
-Text GLabel 850  1250 0    50   Input ~ 0
-ROW2
-Text GLabel 850  1650 0    50   Input ~ 0
-ROW3
-Text GLabel 850  850  0    50   Input ~ 0
-ROW1
-Wire Wire Line
-	1550 850  1550 1250
-Wire Wire Line
-	1550 1250 1550 1650
-Connection ~ 1550 1250
-$Comp
-L Diode:1N4148WS D21
-U 1 1 5DFE63CB
-P 2350 1650
-F 0 "D21" H 2350 1915 50  0000 C CNN
-F 1 "D3.2" H 2350 1824 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 1650 50  0001 C CNN
-F 3 "~" H 2350 1650 50  0001 C CNN
-	1    2350 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW19
-U 1 1 5DFE63D2
-P 2700 1650
-F 0 "SW19" H 2700 1935 50  0000 C CNN
-F 1 "SW_Push" H 2700 1844 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 1850 50  0001 C CNN
-F 3 "" H 2700 1850 50  0001 C CNN
-	1    2700 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D20
-U 1 1 5DFE63F5
-P 2350 1250
-F 0 "D20" H 2350 1515 50  0000 C CNN
-F 1 "D2.2" H 2350 1424 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 1250 50  0001 C CNN
-F 3 "~" H 2350 1250 50  0001 C CNN
-	1    2350 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW18
-U 1 1 5DFE63FC
-P 2700 1250
-F 0 "SW18" H 2700 1535 50  0000 C CNN
-F 1 "SW_Push" H 2700 1444 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 1450 50  0001 C CNN
-F 3 "" H 2700 1450 50  0001 C CNN
-	1    2700 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D19
-U 1 1 5DFE6403
-P 2350 850
-F 0 "D19" H 2350 1115 50  0000 C CNN
-F 1 "D1.2" H 2350 1024 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 850 50  0001 C CNN
-F 3 "~" H 2350 850 50  0001 C CNN
-	1    2350 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW17
-U 1 1 5DFE640A
-P 2700 850
-F 0 "SW17" H 2700 1135 50  0000 C CNN
-F 1 "SW_Push" H 2700 1044 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 2700 1050 50  0001 C CNN
-F 3 "" H 2700 1050 50  0001 C CNN
-	1    2700 850 
-	1    0    0    -1  
-$EndComp
-Text GLabel 2900 850  2    50   Input ~ 0
-COL2
-Text GLabel 2200 1250 0    50   Input ~ 0
-ROW2
-Text GLabel 2200 1650 0    50   Input ~ 0
-ROW3
-Text GLabel 2200 850  0    50   Input ~ 0
-ROW1
-Wire Wire Line
-	2900 850  2900 1250
-Wire Wire Line
-	2900 1250 2900 1650
-Connection ~ 2900 1250
-$Comp
-L Diode:1N4148WS D16
-U 1 1 5DFEF7D2
-P 950 5550
-F 0 "D16" H 950 5815 50  0000 C CNN
-F 1 "D3.6" H 950 5724 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 5550 50  0001 C CNN
-F 3 "~" H 950 5550 50  0001 C CNN
-	1    950  5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW14
-U 1 1 5DFEF7D9
-P 1300 5550
-F 0 "SW14" H 1300 5835 50  0000 C CNN
-F 1 "SW_Push" H 1300 5744 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1300 5750 50  0001 C CNN
-F 3 "" H 1300 5750 50  0001 C CNN
-	1    1300 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D17
-U 1 1 5DFEF7E0
-P 950 5950
-F 0 "D17" H 950 6215 50  0000 C CNN
-F 1 "D4.6" H 950 6124 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 5950 50  0001 C CNN
-F 3 "~" H 950 5950 50  0001 C CNN
-	1    950  5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW15
-U 1 1 5DFEF7E7
-P 1300 5950
-F 0 "SW15" H 1300 6235 50  0000 C CNN
-F 1 "SW_Push" H 1300 6144 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1300 6150 50  0001 C CNN
-F 3 "" H 1300 6150 50  0001 C CNN
-	1    1300 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D15
-U 1 1 5DFEF7FC
-P 950 5150
-F 0 "D15" H 950 5415 50  0000 C CNN
-F 1 "D2.6" H 950 5324 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 5150 50  0001 C CNN
-F 3 "~" H 950 5150 50  0001 C CNN
-	1    950  5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW13
-U 1 1 5DFEF803
-P 1300 5150
-F 0 "SW13" H 1300 5435 50  0000 C CNN
-F 1 "SW_Push" H 1300 5344 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1300 5350 50  0001 C CNN
-F 3 "" H 1300 5350 50  0001 C CNN
-	1    1300 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148WS D14
-U 1 1 5DFEF80A
-P 950 4750
-F 0 "D14" H 950 5015 50  0000 C CNN
-F 1 "D1.6" H 950 4924 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 4750 50  0001 C CNN
-F 3 "~" H 950 4750 50  0001 C CNN
-	1    950  4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW12
-U 1 1 5DFEF811
-P 1300 4750
-F 0 "SW12" H 1300 5035 50  0000 C CNN
-F 1 "SW_Push" H 1300 4944 50  0000 C CNN
-F 2 "custom:CherryMX_Choc_1u" H 1300 4950 50  0001 C CNN
-F 3 "" H 1300 4950 50  0001 C CNN
-	1    1300 4750
-	1    0    0    -1  
-$EndComp
-Text GLabel 1500 4750 2    50   Input ~ 0
-COL6
-Text GLabel 800  5150 0    50   Input ~ 0
-ROW2
-Text GLabel 800  5550 0    50   Input ~ 0
-ROW3
-Text GLabel 800  5950 0    50   Input ~ 0
-ROW4
-Text GLabel 800  4750 0    50   Input ~ 0
-ROW1
-Wire Wire Line
-	1500 4750 1500 5150
-Wire Wire Line
-	1500 5150 1500 5550
-Connection ~ 1500 5150
-Wire Wire Line
-	1500 5550 1500 5950
-Connection ~ 1500 5550
 Text GLabel 6700 4000 2    50   Input ~ 0
 COL1
 Text GLabel 5400 2800 0    50   Input ~ 0
@@ -980,38 +397,10 @@ $EndComp
 Connection ~ 10750 2400
 Text GLabel 5900 1200 0    50   Input ~ 0
 VBAT
-$Comp
-L power:GND #PWR0107
-U 1 1 5ED2E262
-P 8550 2250
-F 0 "#PWR0107" H 8550 2000 50  0001 C CNN
-F 1 "GND" H 8555 2077 50  0000 C CNN
-F 2 "" H 8550 2250 50  0001 C CNN
-F 3 "" H 8550 2250 50  0001 C CNN
-	1    8550 2250
-	1    0    0    -1  
-$EndComp
-Text GLabel 8550 2150 0    50   Input ~ 0
-5V
-Text GLabel 8550 1950 0    50   Input ~ 0
-TX
-Text GLabel 8550 2050 0    50   Input ~ 0
-RX
 Text GLabel 6700 3400 2    50   Input ~ 0
 TX
 Text GLabel 6700 3500 2    50   Input ~ 0
 RX
-$Comp
-L Connector:Conn_01x04_Female J2
-U 1 1 5ED45338
-P 8750 2150
-F 0 "J2" H 8643 1725 50  0000 C CNN
-F 1 "AudioJack4" H 8643 1816 50  0000 C CNN
-F 2 "keebio:TRRS-PJ-320A-no-Fmask" H 8750 2150 50  0001 C CNN
-F 3 "~" H 8750 2150 50  0001 C CNN
-	1    8750 2150
-	1    0    0    1   
-$EndComp
 Text GLabel 7300 1800 0    50   Input ~ 0
 SWDIO
 Text GLabel 7300 1900 0    50   Input ~ 0
@@ -1077,6 +466,1614 @@ Text GLabel 7300 2400 0    50   Input ~ 0
 PA7
 Text GLabel 6700 3000 2    50   Input ~ 0
 PA5
+Connection ~ 1550 1600
+Wire Wire Line
+	1550 1600 1550 2000
+Connection ~ 1550 1200
+Wire Wire Line
+	1550 1200 1550 1600
+Wire Wire Line
+	1550 800  1550 1200
+Text GLabel 850  800  0    50   Input ~ 0
+ROW1
+Text GLabel 850  2000 0    50   Input ~ 0
+ROW4
+Text GLabel 850  1600 0    50   Input ~ 0
+ROW3
+Text GLabel 850  1200 0    50   Input ~ 0
+ROW2
+Text GLabel 1550 800  2    50   Input ~ 0
+COL1
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F68106B
+P 1350 800
+F 0 "SW1" H 1350 1085 50  0000 C CNN
+F 1 "SW_Push" H 1350 994 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 1000 50  0001 C CNN
+F 3 "" H 1350 1000 50  0001 C CNN
+	1    1350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D11
+U 1 1 5F681075
+P 1000 800
+F 0 "D11" H 1000 1065 50  0000 C CNN
+F 1 "D1.1" H 1000 974 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 800 50  0001 C CNN
+F 3 "~" H 1000 800 50  0001 C CNN
+	1    1000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5F68107F
+P 1350 1200
+F 0 "SW2" H 1350 1485 50  0000 C CNN
+F 1 "SW_Push" H 1350 1394 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 1400 50  0001 C CNN
+F 3 "" H 1350 1400 50  0001 C CNN
+	1    1350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D21
+U 1 1 5F681089
+P 1000 1200
+F 0 "D21" H 1000 1465 50  0000 C CNN
+F 1 "D2.1" H 1000 1374 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 1200 50  0001 C CNN
+F 3 "~" H 1000 1200 50  0001 C CNN
+	1    1000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5F681093
+P 1350 2000
+F 0 "SW4" H 1350 2285 50  0000 C CNN
+F 1 "SW_Push" H 1350 2194 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 2200 50  0001 C CNN
+F 3 "" H 1350 2200 50  0001 C CNN
+	1    1350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D41
+U 1 1 5F68109D
+P 1000 2000
+F 0 "D41" H 1000 2265 50  0000 C CNN
+F 1 "D4.1" H 1000 2174 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 2000 50  0001 C CNN
+F 3 "~" H 1000 2000 50  0001 C CNN
+	1    1000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5F6810A7
+P 1350 1600
+F 0 "SW3" H 1350 1885 50  0000 C CNN
+F 1 "SW_Push" H 1350 1794 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 1800 50  0001 C CNN
+F 3 "" H 1350 1800 50  0001 C CNN
+	1    1350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D31
+U 1 1 5F6810B1
+P 1000 1600
+F 0 "D31" H 1000 1865 50  0000 C CNN
+F 1 "D3.1" H 1000 1774 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 1600 50  0001 C CNN
+F 3 "~" H 1000 1600 50  0001 C CNN
+	1    1000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2000 1550 2400
+Text GLabel 850  2400 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5F728054
+P 1350 2400
+F 0 "SW5" H 1350 2685 50  0000 C CNN
+F 1 "SW_Push" H 1350 2594 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 2600 50  0001 C CNN
+F 3 "" H 1350 2600 50  0001 C CNN
+	1    1350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D51
+U 1 1 5F72805E
+P 1000 2400
+F 0 "D51" H 1000 2665 50  0000 C CNN
+F 1 "D5.1" H 1000 2574 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 2400 50  0001 C CNN
+F 3 "~" H 1000 2400 50  0001 C CNN
+	1    1000 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 2000
+Connection ~ 2900 1600
+Wire Wire Line
+	2900 1600 2900 2000
+Connection ~ 2900 1200
+Wire Wire Line
+	2900 1200 2900 1600
+Wire Wire Line
+	2900 800  2900 1200
+Text GLabel 2200 800  0    50   Input ~ 0
+ROW1
+Text GLabel 2200 2000 0    50   Input ~ 0
+ROW4
+Text GLabel 2200 1600 0    50   Input ~ 0
+ROW3
+Text GLabel 2200 1200 0    50   Input ~ 0
+ROW2
+Text GLabel 2900 800  2    50   Input ~ 0
+COL2
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5F73134E
+P 2700 800
+F 0 "SW6" H 2700 1085 50  0000 C CNN
+F 1 "SW_Push" H 2700 994 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 1000 50  0001 C CNN
+F 3 "" H 2700 1000 50  0001 C CNN
+	1    2700 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D12
+U 1 1 5F731358
+P 2350 800
+F 0 "D12" H 2350 1065 50  0000 C CNN
+F 1 "D1.2" H 2350 974 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 800 50  0001 C CNN
+F 3 "~" H 2350 800 50  0001 C CNN
+	1    2350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5F731362
+P 2700 1200
+F 0 "SW7" H 2700 1485 50  0000 C CNN
+F 1 "SW_Push" H 2700 1394 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 1400 50  0001 C CNN
+F 3 "" H 2700 1400 50  0001 C CNN
+	1    2700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D22
+U 1 1 5F73136C
+P 2350 1200
+F 0 "D22" H 2350 1465 50  0000 C CNN
+F 1 "D2.2" H 2350 1374 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 1200 50  0001 C CNN
+F 3 "~" H 2350 1200 50  0001 C CNN
+	1    2350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 5F731376
+P 2700 2000
+F 0 "SW9" H 2700 2285 50  0000 C CNN
+F 1 "SW_Push" H 2700 2194 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 2200 50  0001 C CNN
+F 3 "" H 2700 2200 50  0001 C CNN
+	1    2700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D42
+U 1 1 5F731380
+P 2350 2000
+F 0 "D42" H 2350 2265 50  0000 C CNN
+F 1 "D4.2" H 2350 2174 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 2000 50  0001 C CNN
+F 3 "~" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5F73138A
+P 2700 1600
+F 0 "SW8" H 2700 1885 50  0000 C CNN
+F 1 "SW_Push" H 2700 1794 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 1800 50  0001 C CNN
+F 3 "" H 2700 1800 50  0001 C CNN
+	1    2700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D32
+U 1 1 5F731394
+P 2350 1600
+F 0 "D32" H 2350 1865 50  0000 C CNN
+F 1 "D3.2" H 2350 1774 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 1600 50  0001 C CNN
+F 3 "~" H 2350 1600 50  0001 C CNN
+	1    2350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2000 2900 2400
+Text GLabel 2200 2400 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW10
+U 1 1 5F7313A0
+P 2700 2400
+F 0 "SW10" H 2700 2685 50  0000 C CNN
+F 1 "SW_Push" H 2700 2594 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 2600 50  0001 C CNN
+F 3 "" H 2700 2600 50  0001 C CNN
+	1    2700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D52
+U 1 1 5F7313AA
+P 2350 2400
+F 0 "D52" H 2350 2665 50  0000 C CNN
+F 1 "D5.2" H 2350 2574 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 2400 50  0001 C CNN
+F 3 "~" H 2350 2400 50  0001 C CNN
+	1    2350 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 2000
+Connection ~ 1500 3750
+Wire Wire Line
+	1500 3750 1500 4150
+Connection ~ 1500 3350
+Wire Wire Line
+	1500 3350 1500 3750
+Wire Wire Line
+	1500 2950 1500 3350
+Text GLabel 800  2950 0    50   Input ~ 0
+ROW1
+Text GLabel 800  4150 0    50   Input ~ 0
+ROW4
+Text GLabel 800  3750 0    50   Input ~ 0
+ROW3
+Text GLabel 800  3350 0    50   Input ~ 0
+ROW2
+Text GLabel 1500 2950 2    50   Input ~ 0
+COL3
+$Comp
+L Switch:SW_Push SW11
+U 1 1 5F7440D1
+P 1300 2950
+F 0 "SW11" H 1300 3235 50  0000 C CNN
+F 1 "SW_Push" H 1300 3144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1300 3150 50  0001 C CNN
+F 3 "" H 1300 3150 50  0001 C CNN
+	1    1300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D13
+U 1 1 5F7440DB
+P 950 2950
+F 0 "D13" H 950 3215 50  0000 C CNN
+F 1 "D1.3" H 950 3124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 2950 50  0001 C CNN
+F 3 "~" H 950 2950 50  0001 C CNN
+	1    950  2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 5F7440E5
+P 1300 3350
+F 0 "SW12" H 1300 3635 50  0000 C CNN
+F 1 "SW_Push" H 1300 3544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1300 3550 50  0001 C CNN
+F 3 "" H 1300 3550 50  0001 C CNN
+	1    1300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D23
+U 1 1 5F7440EF
+P 950 3350
+F 0 "D23" H 950 3615 50  0000 C CNN
+F 1 "D2.3" H 950 3524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 3350 50  0001 C CNN
+F 3 "~" H 950 3350 50  0001 C CNN
+	1    950  3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5F7440F9
+P 1300 4150
+F 0 "SW14" H 1300 4435 50  0000 C CNN
+F 1 "SW_Push" H 1300 4344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1300 4350 50  0001 C CNN
+F 3 "" H 1300 4350 50  0001 C CNN
+	1    1300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D43
+U 1 1 5F744103
+P 950 4150
+F 0 "D43" H 950 4415 50  0000 C CNN
+F 1 "D4.3" H 950 4324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 4150 50  0001 C CNN
+F 3 "~" H 950 4150 50  0001 C CNN
+	1    950  4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW13
+U 1 1 5F74410D
+P 1300 3750
+F 0 "SW13" H 1300 4035 50  0000 C CNN
+F 1 "SW_Push" H 1300 3944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1300 3950 50  0001 C CNN
+F 3 "" H 1300 3950 50  0001 C CNN
+	1    1300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D33
+U 1 1 5F744117
+P 950 3750
+F 0 "D33" H 950 4015 50  0000 C CNN
+F 1 "D3.3" H 950 3924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 3750 50  0001 C CNN
+F 3 "~" H 950 3750 50  0001 C CNN
+	1    950  3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4150 1500 4550
+Text GLabel 800  4550 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5F744123
+P 1300 4550
+F 0 "SW15" H 1300 4835 50  0000 C CNN
+F 1 "SW_Push" H 1300 4744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1300 4750 50  0001 C CNN
+F 3 "" H 1300 4750 50  0001 C CNN
+	1    1300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D53
+U 1 1 5F74412D
+P 950 4550
+F 0 "D53" H 950 4815 50  0000 C CNN
+F 1 "D5.3" H 950 4724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 950 4550 50  0001 C CNN
+F 3 "~" H 950 4550 50  0001 C CNN
+	1    950  4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 4150
+Connection ~ 2850 3750
+Wire Wire Line
+	2850 3750 2850 4150
+Connection ~ 2850 3350
+Wire Wire Line
+	2850 3350 2850 3750
+Wire Wire Line
+	2850 2950 2850 3350
+Text GLabel 2150 2950 0    50   Input ~ 0
+ROW1
+Text GLabel 2150 4150 0    50   Input ~ 0
+ROW4
+Text GLabel 2150 3750 0    50   Input ~ 0
+ROW3
+Text GLabel 2150 3350 0    50   Input ~ 0
+ROW2
+Text GLabel 2850 2950 2    50   Input ~ 0
+COL4
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5F75DCD9
+P 2650 2950
+F 0 "SW16" H 2650 3235 50  0000 C CNN
+F 1 "SW_Push" H 2650 3144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2650 3150 50  0001 C CNN
+F 3 "" H 2650 3150 50  0001 C CNN
+	1    2650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D14
+U 1 1 5F75DCE3
+P 2300 2950
+F 0 "D14" H 2300 3215 50  0000 C CNN
+F 1 "D1.4" H 2300 3124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2300 2950 50  0001 C CNN
+F 3 "~" H 2300 2950 50  0001 C CNN
+	1    2300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5F75DCED
+P 2650 3350
+F 0 "SW17" H 2650 3635 50  0000 C CNN
+F 1 "SW_Push" H 2650 3544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2650 3550 50  0001 C CNN
+F 3 "" H 2650 3550 50  0001 C CNN
+	1    2650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D24
+U 1 1 5F75DCF7
+P 2300 3350
+F 0 "D24" H 2300 3615 50  0000 C CNN
+F 1 "D2.4" H 2300 3524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2300 3350 50  0001 C CNN
+F 3 "~" H 2300 3350 50  0001 C CNN
+	1    2300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW19
+U 1 1 5F75DD01
+P 2650 4150
+F 0 "SW19" H 2650 4435 50  0000 C CNN
+F 1 "SW_Push" H 2650 4344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2650 4350 50  0001 C CNN
+F 3 "" H 2650 4350 50  0001 C CNN
+	1    2650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D44
+U 1 1 5F75DD0B
+P 2300 4150
+F 0 "D44" H 2300 4415 50  0000 C CNN
+F 1 "D4.4" H 2300 4324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2300 4150 50  0001 C CNN
+F 3 "~" H 2300 4150 50  0001 C CNN
+	1    2300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW18
+U 1 1 5F75DD15
+P 2650 3750
+F 0 "SW18" H 2650 4035 50  0000 C CNN
+F 1 "SW_Push" H 2650 3944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2650 3950 50  0001 C CNN
+F 3 "" H 2650 3950 50  0001 C CNN
+	1    2650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D34
+U 1 1 5F75DD1F
+P 2300 3750
+F 0 "D34" H 2300 4015 50  0000 C CNN
+F 1 "D3.4" H 2300 3924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2300 3750 50  0001 C CNN
+F 3 "~" H 2300 3750 50  0001 C CNN
+	1    2300 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4150 2850 4550
+Text GLabel 2150 4550 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5F75DD2B
+P 2650 4550
+F 0 "SW20" H 2650 4835 50  0000 C CNN
+F 1 "SW_Push" H 2650 4744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2650 4750 50  0001 C CNN
+F 3 "" H 2650 4750 50  0001 C CNN
+	1    2650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D54
+U 1 1 5F75DD35
+P 2300 4550
+F 0 "D54" H 2300 4815 50  0000 C CNN
+F 1 "D5.4" H 2300 4724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2300 4550 50  0001 C CNN
+F 3 "~" H 2300 4550 50  0001 C CNN
+	1    2300 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 4150
+Connection ~ 4250 3750
+Wire Wire Line
+	4250 3750 4250 4150
+Connection ~ 4250 3350
+Wire Wire Line
+	4250 3350 4250 3750
+Wire Wire Line
+	4250 2950 4250 3350
+Text GLabel 3550 2950 0    50   Input ~ 0
+ROW1
+Text GLabel 3550 4150 0    50   Input ~ 0
+ROW4
+Text GLabel 3550 3750 0    50   Input ~ 0
+ROW3
+Text GLabel 3550 3350 0    50   Input ~ 0
+ROW2
+Text GLabel 4250 2950 2    50   Input ~ 0
+COL5
+$Comp
+L Switch:SW_Push SW21
+U 1 1 5F771ED4
+P 4050 2950
+F 0 "SW21" H 4050 3235 50  0000 C CNN
+F 1 "SW_Push" H 4050 3144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4050 3150 50  0001 C CNN
+F 3 "" H 4050 3150 50  0001 C CNN
+	1    4050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D15
+U 1 1 5F771EDE
+P 3700 2950
+F 0 "D15" H 3700 3215 50  0000 C CNN
+F 1 "D1.5" H 3700 3124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 2950 50  0001 C CNN
+F 3 "~" H 3700 2950 50  0001 C CNN
+	1    3700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW22
+U 1 1 5F771EE8
+P 4050 3350
+F 0 "SW22" H 4050 3635 50  0000 C CNN
+F 1 "SW_Push" H 4050 3544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4050 3550 50  0001 C CNN
+F 3 "" H 4050 3550 50  0001 C CNN
+	1    4050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D25
+U 1 1 5F771EF2
+P 3700 3350
+F 0 "D25" H 3700 3615 50  0000 C CNN
+F 1 "D2.5" H 3700 3524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 3350 50  0001 C CNN
+F 3 "~" H 3700 3350 50  0001 C CNN
+	1    3700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW24
+U 1 1 5F771EFC
+P 4050 4150
+F 0 "SW24" H 4050 4435 50  0000 C CNN
+F 1 "SW_Push" H 4050 4344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4050 4350 50  0001 C CNN
+F 3 "" H 4050 4350 50  0001 C CNN
+	1    4050 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D45
+U 1 1 5F771F06
+P 3700 4150
+F 0 "D45" H 3700 4415 50  0000 C CNN
+F 1 "D4.5" H 3700 4324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 4150 50  0001 C CNN
+F 3 "~" H 3700 4150 50  0001 C CNN
+	1    3700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW23
+U 1 1 5F771F10
+P 4050 3750
+F 0 "SW23" H 4050 4035 50  0000 C CNN
+F 1 "SW_Push" H 4050 3944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4050 3950 50  0001 C CNN
+F 3 "" H 4050 3950 50  0001 C CNN
+	1    4050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D35
+U 1 1 5F771F1A
+P 3700 3750
+F 0 "D35" H 3700 4015 50  0000 C CNN
+F 1 "D3.5" H 3700 3924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 3750 50  0001 C CNN
+F 3 "~" H 3700 3750 50  0001 C CNN
+	1    3700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4150 4250 4550
+Text GLabel 3550 4550 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW25
+U 1 1 5F771F26
+P 4050 4550
+F 0 "SW25" H 4050 4835 50  0000 C CNN
+F 1 "SW_Push" H 4050 4744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4050 4750 50  0001 C CNN
+F 3 "" H 4050 4750 50  0001 C CNN
+	1    4050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D55
+U 1 1 5F771F30
+P 3700 4550
+F 0 "D55" H 3700 4815 50  0000 C CNN
+F 1 "D5.5" H 3700 4724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3700 4550 50  0001 C CNN
+F 3 "~" H 3700 4550 50  0001 C CNN
+	1    3700 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 4150
+Connection ~ 1550 5950
+Wire Wire Line
+	1550 5950 1550 6350
+Connection ~ 1550 5550
+Wire Wire Line
+	1550 5550 1550 5950
+Wire Wire Line
+	1550 5150 1550 5550
+Text GLabel 850  5150 0    50   Input ~ 0
+ROW1
+Text GLabel 850  6350 0    50   Input ~ 0
+ROW4
+Text GLabel 850  5950 0    50   Input ~ 0
+ROW3
+Text GLabel 850  5550 0    50   Input ~ 0
+ROW2
+Text GLabel 1550 5150 2    50   Input ~ 0
+COL6
+$Comp
+L Switch:SW_Push SW26
+U 1 1 5F793B90
+P 1350 5150
+F 0 "SW26" H 1350 5435 50  0000 C CNN
+F 1 "SW_Push" H 1350 5344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 5350 50  0001 C CNN
+F 3 "" H 1350 5350 50  0001 C CNN
+	1    1350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D16
+U 1 1 5F793B9A
+P 1000 5150
+F 0 "D16" H 1000 5415 50  0000 C CNN
+F 1 "D1.6" H 1000 5324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 5150 50  0001 C CNN
+F 3 "~" H 1000 5150 50  0001 C CNN
+	1    1000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW27
+U 1 1 5F793BA4
+P 1350 5550
+F 0 "SW27" H 1350 5835 50  0000 C CNN
+F 1 "SW_Push" H 1350 5744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 5750 50  0001 C CNN
+F 3 "" H 1350 5750 50  0001 C CNN
+	1    1350 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D26
+U 1 1 5F793BAE
+P 1000 5550
+F 0 "D26" H 1000 5815 50  0000 C CNN
+F 1 "D2.6" H 1000 5724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 5550 50  0001 C CNN
+F 3 "~" H 1000 5550 50  0001 C CNN
+	1    1000 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW29
+U 1 1 5F793BB8
+P 1350 6350
+F 0 "SW29" H 1350 6635 50  0000 C CNN
+F 1 "SW_Push" H 1350 6544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 6550 50  0001 C CNN
+F 3 "" H 1350 6550 50  0001 C CNN
+	1    1350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D46
+U 1 1 5F793BC2
+P 1000 6350
+F 0 "D46" H 1000 6615 50  0000 C CNN
+F 1 "D4.6" H 1000 6524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 6350 50  0001 C CNN
+F 3 "~" H 1000 6350 50  0001 C CNN
+	1    1000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW28
+U 1 1 5F793BCC
+P 1350 5950
+F 0 "SW28" H 1350 6235 50  0000 C CNN
+F 1 "SW_Push" H 1350 6144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 6150 50  0001 C CNN
+F 3 "" H 1350 6150 50  0001 C CNN
+	1    1350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D36
+U 1 1 5F793BD6
+P 1000 5950
+F 0 "D36" H 1000 6215 50  0000 C CNN
+F 1 "D3.6" H 1000 6124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 5950 50  0001 C CNN
+F 3 "~" H 1000 5950 50  0001 C CNN
+	1    1000 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6350 1550 6750
+Text GLabel 850  6750 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW30
+U 1 1 5F793BE2
+P 1350 6750
+F 0 "SW30" H 1350 7035 50  0000 C CNN
+F 1 "SW_Push" H 1350 6944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 1350 6950 50  0001 C CNN
+F 3 "" H 1350 6950 50  0001 C CNN
+	1    1350 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D56
+U 1 1 5F793BEC
+P 1000 6750
+F 0 "D56" H 1000 7015 50  0000 C CNN
+F 1 "D5.6" H 1000 6924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1000 6750 50  0001 C CNN
+F 3 "~" H 1000 6750 50  0001 C CNN
+	1    1000 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 6350
+Connection ~ 2900 5950
+Wire Wire Line
+	2900 5950 2900 6350
+Connection ~ 2900 5550
+Wire Wire Line
+	2900 5550 2900 5950
+Wire Wire Line
+	2900 5150 2900 5550
+Text GLabel 2200 5150 0    50   Input ~ 0
+ROW1
+Text GLabel 2200 6350 0    50   Input ~ 0
+ROW4
+Text GLabel 2200 5950 0    50   Input ~ 0
+ROW3
+Text GLabel 2200 5550 0    50   Input ~ 0
+ROW2
+Text GLabel 2900 5150 2    50   Input ~ 0
+COL7
+$Comp
+L Switch:SW_Push SW31
+U 1 1 5F793C01
+P 2700 5150
+F 0 "SW31" H 2700 5435 50  0000 C CNN
+F 1 "SW_Push" H 2700 5344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 5350 50  0001 C CNN
+F 3 "" H 2700 5350 50  0001 C CNN
+	1    2700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D17
+U 1 1 5F793C0B
+P 2350 5150
+F 0 "D17" H 2350 5415 50  0000 C CNN
+F 1 "D1.7" H 2350 5324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 5150 50  0001 C CNN
+F 3 "~" H 2350 5150 50  0001 C CNN
+	1    2350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW32
+U 1 1 5F793C15
+P 2700 5550
+F 0 "SW32" H 2700 5835 50  0000 C CNN
+F 1 "SW_Push" H 2700 5744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 5750 50  0001 C CNN
+F 3 "" H 2700 5750 50  0001 C CNN
+	1    2700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D27
+U 1 1 5F793C1F
+P 2350 5550
+F 0 "D27" H 2350 5815 50  0000 C CNN
+F 1 "D2.7" H 2350 5724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 5550 50  0001 C CNN
+F 3 "~" H 2350 5550 50  0001 C CNN
+	1    2350 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW34
+U 1 1 5F793C29
+P 2700 6350
+F 0 "SW34" H 2700 6635 50  0000 C CNN
+F 1 "SW_Push" H 2700 6544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 6550 50  0001 C CNN
+F 3 "" H 2700 6550 50  0001 C CNN
+	1    2700 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D47
+U 1 1 5F793C33
+P 2350 6350
+F 0 "D47" H 2350 6615 50  0000 C CNN
+F 1 "D4.7" H 2350 6524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 6350 50  0001 C CNN
+F 3 "~" H 2350 6350 50  0001 C CNN
+	1    2350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW33
+U 1 1 5F793C3D
+P 2700 5950
+F 0 "SW33" H 2700 6235 50  0000 C CNN
+F 1 "SW_Push" H 2700 6144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 6150 50  0001 C CNN
+F 3 "" H 2700 6150 50  0001 C CNN
+	1    2700 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D37
+U 1 1 5F793C47
+P 2350 5950
+F 0 "D37" H 2350 6215 50  0000 C CNN
+F 1 "D3.7" H 2350 6124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 5950 50  0001 C CNN
+F 3 "~" H 2350 5950 50  0001 C CNN
+	1    2350 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 6350 2900 6750
+Text GLabel 2200 6750 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW35
+U 1 1 5F793C53
+P 2700 6750
+F 0 "SW35" H 2700 7035 50  0000 C CNN
+F 1 "SW_Push" H 2700 6944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 2700 6950 50  0001 C CNN
+F 3 "" H 2700 6950 50  0001 C CNN
+	1    2700 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D57
+U 1 1 5F793C5D
+P 2350 6750
+F 0 "D57" H 2350 7015 50  0000 C CNN
+F 1 "D5.7" H 2350 6924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2350 6750 50  0001 C CNN
+F 3 "~" H 2350 6750 50  0001 C CNN
+	1    2350 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 6350
+Connection ~ 4300 5950
+Wire Wire Line
+	4300 5950 4300 6350
+Connection ~ 4300 5550
+Wire Wire Line
+	4300 5550 4300 5950
+Wire Wire Line
+	4300 5150 4300 5550
+Text GLabel 3600 5150 0    50   Input ~ 0
+ROW1
+Text GLabel 3600 6350 0    50   Input ~ 0
+ROW4
+Text GLabel 3600 5950 0    50   Input ~ 0
+ROW3
+Text GLabel 3600 5550 0    50   Input ~ 0
+ROW2
+Text GLabel 4300 5150 2    50   Input ~ 0
+COL8
+$Comp
+L Switch:SW_Push SW36
+U 1 1 5F793C72
+P 4100 5150
+F 0 "SW36" H 4100 5435 50  0000 C CNN
+F 1 "SW_Push" H 4100 5344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4100 5350 50  0001 C CNN
+F 3 "" H 4100 5350 50  0001 C CNN
+	1    4100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D18
+U 1 1 5F793C7C
+P 3750 5150
+F 0 "D18" H 3750 5415 50  0000 C CNN
+F 1 "D1.8" H 3750 5324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3750 5150 50  0001 C CNN
+F 3 "~" H 3750 5150 50  0001 C CNN
+	1    3750 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW37
+U 1 1 5F793C86
+P 4100 5550
+F 0 "SW37" H 4100 5835 50  0000 C CNN
+F 1 "SW_Push" H 4100 5744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4100 5750 50  0001 C CNN
+F 3 "" H 4100 5750 50  0001 C CNN
+	1    4100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D28
+U 1 1 5F793C90
+P 3750 5550
+F 0 "D28" H 3750 5815 50  0000 C CNN
+F 1 "D2.8" H 3750 5724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3750 5550 50  0001 C CNN
+F 3 "~" H 3750 5550 50  0001 C CNN
+	1    3750 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW39
+U 1 1 5F793C9A
+P 4100 6350
+F 0 "SW39" H 4100 6635 50  0000 C CNN
+F 1 "SW_Push" H 4100 6544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4100 6550 50  0001 C CNN
+F 3 "" H 4100 6550 50  0001 C CNN
+	1    4100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D48
+U 1 1 5F793CA4
+P 3750 6350
+F 0 "D48" H 3750 6615 50  0000 C CNN
+F 1 "D4.8" H 3750 6524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3750 6350 50  0001 C CNN
+F 3 "~" H 3750 6350 50  0001 C CNN
+	1    3750 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW38
+U 1 1 5F793CAE
+P 4100 5950
+F 0 "SW38" H 4100 6235 50  0000 C CNN
+F 1 "SW_Push" H 4100 6144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4100 6150 50  0001 C CNN
+F 3 "" H 4100 6150 50  0001 C CNN
+	1    4100 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D38
+U 1 1 5F793CB8
+P 3750 5950
+F 0 "D38" H 3750 6215 50  0000 C CNN
+F 1 "D3.8" H 3750 6124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3750 5950 50  0001 C CNN
+F 3 "~" H 3750 5950 50  0001 C CNN
+	1    3750 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6350 4300 6750
+Text GLabel 3600 6750 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW40
+U 1 1 5F793CC4
+P 4100 6750
+F 0 "SW40" H 4100 7035 50  0000 C CNN
+F 1 "SW_Push" H 4100 6944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 4100 6950 50  0001 C CNN
+F 3 "" H 4100 6950 50  0001 C CNN
+	1    4100 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D58
+U 1 1 5F793CCE
+P 3750 6750
+F 0 "D58" H 3750 7015 50  0000 C CNN
+F 1 "D5.8" H 3750 6924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 3750 6750 50  0001 C CNN
+F 3 "~" H 3750 6750 50  0001 C CNN
+	1    3750 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 6350
+Connection ~ 7450 5550
+Wire Wire Line
+	7450 5550 7450 5950
+Connection ~ 7450 5150
+Wire Wire Line
+	7450 5150 7450 5550
+Wire Wire Line
+	7450 4750 7450 5150
+Text GLabel 6750 4750 0    50   Input ~ 0
+ROW1
+Text GLabel 6750 5950 0    50   Input ~ 0
+ROW4
+Text GLabel 6750 5550 0    50   Input ~ 0
+ROW3
+Text GLabel 6750 5150 0    50   Input ~ 0
+ROW2
+Text GLabel 7450 4750 2    50   Input ~ 0
+COL10
+$Comp
+L Switch:SW_Push SW46
+U 1 1 5F7E5CFC
+P 7250 4750
+F 0 "SW46" H 7250 5035 50  0000 C CNN
+F 1 "SW_Push" H 7250 4944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 7250 4950 50  0001 C CNN
+F 3 "" H 7250 4950 50  0001 C CNN
+	1    7250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D110
+U 1 1 5F7E5D06
+P 6900 4750
+F 0 "D110" H 6900 5015 50  0000 C CNN
+F 1 "D1.10" H 6900 4924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6900 4750 50  0001 C CNN
+F 3 "~" H 6900 4750 50  0001 C CNN
+	1    6900 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW47
+U 1 1 5F7E5D10
+P 7250 5150
+F 0 "SW47" H 7250 5435 50  0000 C CNN
+F 1 "SW_Push" H 7250 5344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 7250 5350 50  0001 C CNN
+F 3 "" H 7250 5350 50  0001 C CNN
+	1    7250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D210
+U 1 1 5F7E5D1A
+P 6900 5150
+F 0 "D210" H 6900 5415 50  0000 C CNN
+F 1 "D2.10" H 6900 5324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6900 5150 50  0001 C CNN
+F 3 "~" H 6900 5150 50  0001 C CNN
+	1    6900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW49
+U 1 1 5F7E5D24
+P 7250 5950
+F 0 "SW49" H 7250 6235 50  0000 C CNN
+F 1 "SW_Push" H 7250 6144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 7250 6150 50  0001 C CNN
+F 3 "" H 7250 6150 50  0001 C CNN
+	1    7250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D410
+U 1 1 5F7E5D2E
+P 6900 5950
+F 0 "D410" H 6900 6215 50  0000 C CNN
+F 1 "D4.10" H 6900 6124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6900 5950 50  0001 C CNN
+F 3 "~" H 6900 5950 50  0001 C CNN
+	1    6900 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW48
+U 1 1 5F7E5D38
+P 7250 5550
+F 0 "SW48" H 7250 5835 50  0000 C CNN
+F 1 "SW_Push" H 7250 5744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 7250 5750 50  0001 C CNN
+F 3 "" H 7250 5750 50  0001 C CNN
+	1    7250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D310
+U 1 1 5F7E5D42
+P 6900 5550
+F 0 "D310" H 6900 5815 50  0000 C CNN
+F 1 "D3.10" H 6900 5724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6900 5550 50  0001 C CNN
+F 3 "~" H 6900 5550 50  0001 C CNN
+	1    6900 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5950 7450 6350
+Text GLabel 6750 6350 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW50
+U 1 1 5F7E5D4E
+P 7250 6350
+F 0 "SW50" H 7250 6635 50  0000 C CNN
+F 1 "SW_Push" H 7250 6544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 7250 6550 50  0001 C CNN
+F 3 "" H 7250 6550 50  0001 C CNN
+	1    7250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D510
+U 1 1 5F7E5D58
+P 6900 6350
+F 0 "D510" H 6900 6615 50  0000 C CNN
+F 1 "D5.10" H 6900 6524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6900 6350 50  0001 C CNN
+F 3 "~" H 6900 6350 50  0001 C CNN
+	1    6900 6350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 5950
+Connection ~ 8950 5500
+Wire Wire Line
+	8950 5500 8950 5900
+Connection ~ 8950 5100
+Wire Wire Line
+	8950 5100 8950 5500
+Wire Wire Line
+	8950 4700 8950 5100
+Text GLabel 8250 4700 0    50   Input ~ 0
+ROW1
+Text GLabel 8250 5900 0    50   Input ~ 0
+ROW4
+Text GLabel 8250 5500 0    50   Input ~ 0
+ROW3
+Text GLabel 8250 5100 0    50   Input ~ 0
+ROW2
+Text GLabel 8950 4700 2    50   Input ~ 0
+COL11
+$Comp
+L Switch:SW_Push SW51
+U 1 1 5F7E5D6D
+P 8750 4700
+F 0 "SW51" H 8750 4985 50  0000 C CNN
+F 1 "SW_Push" H 8750 4894 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 8750 4900 50  0001 C CNN
+F 3 "" H 8750 4900 50  0001 C CNN
+	1    8750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D111
+U 1 1 5F7E5D77
+P 8400 4700
+F 0 "D111" H 8400 4965 50  0000 C CNN
+F 1 "D1.11" H 8400 4874 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 8400 4700 50  0001 C CNN
+F 3 "~" H 8400 4700 50  0001 C CNN
+	1    8400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW52
+U 1 1 5F7E5D81
+P 8750 5100
+F 0 "SW52" H 8750 5385 50  0000 C CNN
+F 1 "SW_Push" H 8750 5294 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 8750 5300 50  0001 C CNN
+F 3 "" H 8750 5300 50  0001 C CNN
+	1    8750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D211
+U 1 1 5F7E5D8B
+P 8400 5100
+F 0 "D211" H 8400 5365 50  0000 C CNN
+F 1 "D2.11" H 8400 5274 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 8400 5100 50  0001 C CNN
+F 3 "~" H 8400 5100 50  0001 C CNN
+	1    8400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW54
+U 1 1 5F7E5D95
+P 8750 5900
+F 0 "SW54" H 8750 6185 50  0000 C CNN
+F 1 "SW_Push" H 8750 6094 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 8750 6100 50  0001 C CNN
+F 3 "" H 8750 6100 50  0001 C CNN
+	1    8750 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D411
+U 1 1 5F7E5D9F
+P 8400 5900
+F 0 "D411" H 8400 6165 50  0000 C CNN
+F 1 "D4.11" H 8400 6074 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 8400 5900 50  0001 C CNN
+F 3 "~" H 8400 5900 50  0001 C CNN
+	1    8400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW53
+U 1 1 5F7E5DA9
+P 8750 5500
+F 0 "SW53" H 8750 5785 50  0000 C CNN
+F 1 "SW_Push" H 8750 5694 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 8750 5700 50  0001 C CNN
+F 3 "" H 8750 5700 50  0001 C CNN
+	1    8750 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D311
+U 1 1 5F7E5DB3
+P 8400 5500
+F 0 "D311" H 8400 5765 50  0000 C CNN
+F 1 "D3.11" H 8400 5674 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 8400 5500 50  0001 C CNN
+F 3 "~" H 8400 5500 50  0001 C CNN
+	1    8400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 5900 8950 6300
+Text GLabel 8250 6300 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW55
+U 1 1 5F7E5DBF
+P 8750 6300
+F 0 "SW55" H 8750 6585 50  0000 C CNN
+F 1 "SW_Push" H 8750 6494 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 8750 6500 50  0001 C CNN
+F 3 "" H 8750 6500 50  0001 C CNN
+	1    8750 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D511
+U 1 1 5F7E5DC9
+P 8400 6300
+F 0 "D511" H 8400 6565 50  0000 C CNN
+F 1 "D5.11" H 8400 6474 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 8400 6300 50  0001 C CNN
+F 3 "~" H 8400 6300 50  0001 C CNN
+	1    8400 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 8950 5900
+Connection ~ 5800 6350
+$Comp
+L Diode:1N4148WS D59
+U 1 1 5F7E5CE7
+P 5250 6750
+F 0 "D59" H 5250 7015 50  0000 C CNN
+F 1 "D5.9" H 5250 6924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5250 6750 50  0001 C CNN
+F 3 "~" H 5250 6750 50  0001 C CNN
+	1    5250 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW45
+U 1 1 5F7E5CDD
+P 5600 6750
+F 0 "SW45" H 5600 7035 50  0000 C CNN
+F 1 "SW_Push" H 5600 6944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 5600 6950 50  0001 C CNN
+F 3 "" H 5600 6950 50  0001 C CNN
+	1    5600 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 6750 0    50   Input ~ 0
+ROW5
+Wire Wire Line
+	5800 6350 5800 6750
+$Comp
+L Diode:1N4148WS D39
+U 1 1 5F7E5CD1
+P 5250 5950
+F 0 "D39" H 5250 6215 50  0000 C CNN
+F 1 "D3.9" H 5250 6124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5250 5950 50  0001 C CNN
+F 3 "~" H 5250 5950 50  0001 C CNN
+	1    5250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW43
+U 1 1 5F7E5CC7
+P 5600 5950
+F 0 "SW43" H 5600 6235 50  0000 C CNN
+F 1 "SW_Push" H 5600 6144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 5600 6150 50  0001 C CNN
+F 3 "" H 5600 6150 50  0001 C CNN
+	1    5600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D49
+U 1 1 5F7E5CBD
+P 5250 6350
+F 0 "D49" H 5250 6615 50  0000 C CNN
+F 1 "D4.9" H 5250 6524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5250 6350 50  0001 C CNN
+F 3 "~" H 5250 6350 50  0001 C CNN
+	1    5250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW44
+U 1 1 5F7E5CB3
+P 5600 6350
+F 0 "SW44" H 5600 6635 50  0000 C CNN
+F 1 "SW_Push" H 5600 6544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 5600 6550 50  0001 C CNN
+F 3 "" H 5600 6550 50  0001 C CNN
+	1    5600 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D29
+U 1 1 5F7E5CA9
+P 5250 5550
+F 0 "D29" H 5250 5815 50  0000 C CNN
+F 1 "D2.9" H 5250 5724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5250 5550 50  0001 C CNN
+F 3 "~" H 5250 5550 50  0001 C CNN
+	1    5250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW42
+U 1 1 5F7E5C9F
+P 5600 5550
+F 0 "SW42" H 5600 5835 50  0000 C CNN
+F 1 "SW_Push" H 5600 5744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 5600 5750 50  0001 C CNN
+F 3 "" H 5600 5750 50  0001 C CNN
+	1    5600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D19
+U 1 1 5F7E5C95
+P 5250 5150
+F 0 "D19" H 5250 5415 50  0000 C CNN
+F 1 "D1.9" H 5250 5324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5250 5150 50  0001 C CNN
+F 3 "~" H 5250 5150 50  0001 C CNN
+	1    5250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW41
+U 1 1 5F7E5C8B
+P 5600 5150
+F 0 "SW41" H 5600 5435 50  0000 C CNN
+F 1 "SW_Push" H 5600 5344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 5600 5350 50  0001 C CNN
+F 3 "" H 5600 5350 50  0001 C CNN
+	1    5600 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 5150 2    50   Input ~ 0
+COL9
+Text GLabel 5100 5550 0    50   Input ~ 0
+ROW2
+Text GLabel 5100 5950 0    50   Input ~ 0
+ROW3
+Text GLabel 5100 6350 0    50   Input ~ 0
+ROW4
+Text GLabel 5100 5150 0    50   Input ~ 0
+ROW1
+Wire Wire Line
+	5800 5150 5800 5550
+Wire Wire Line
+	5800 5550 5800 5950
+Connection ~ 5800 5550
+Wire Wire Line
+	5800 5950 5800 6350
+Connection ~ 5800 5950
+Connection ~ 10500 5550
+Wire Wire Line
+	10500 5550 10500 5950
+Connection ~ 10500 5150
+Wire Wire Line
+	10500 5150 10500 5550
+Wire Wire Line
+	10500 4750 10500 5150
+Text GLabel 9800 4750 0    50   Input ~ 0
+ROW1
+Text GLabel 9800 5950 0    50   Input ~ 0
+ROW4
+Text GLabel 9800 5550 0    50   Input ~ 0
+ROW3
+Text GLabel 9800 5150 0    50   Input ~ 0
+ROW2
+Text GLabel 10500 4750 2    50   Input ~ 0
+COL12
+$Comp
+L Switch:SW_Push SW56
+U 1 1 5F955C72
+P 10300 4750
+F 0 "SW56" H 10300 5035 50  0000 C CNN
+F 1 "SW_Push" H 10300 4944 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 10300 4950 50  0001 C CNN
+F 3 "" H 10300 4950 50  0001 C CNN
+	1    10300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D112
+U 1 1 5F955C7C
+P 9950 4750
+F 0 "D112" H 9950 5015 50  0000 C CNN
+F 1 "D1.12" H 9950 4924 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 9950 4750 50  0001 C CNN
+F 3 "~" H 9950 4750 50  0001 C CNN
+	1    9950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW57
+U 1 1 5F955C86
+P 10300 5150
+F 0 "SW57" H 10300 5435 50  0000 C CNN
+F 1 "SW_Push" H 10300 5344 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 10300 5350 50  0001 C CNN
+F 3 "" H 10300 5350 50  0001 C CNN
+	1    10300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D212
+U 1 1 5F955C90
+P 9950 5150
+F 0 "D212" H 9950 5415 50  0000 C CNN
+F 1 "D2.12" H 9950 5324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 9950 5150 50  0001 C CNN
+F 3 "~" H 9950 5150 50  0001 C CNN
+	1    9950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW59
+U 1 1 5F955C9A
+P 10300 5950
+F 0 "SW59" H 10300 6235 50  0000 C CNN
+F 1 "SW_Push" H 10300 6144 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 10300 6150 50  0001 C CNN
+F 3 "" H 10300 6150 50  0001 C CNN
+	1    10300 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D412
+U 1 1 5F955CA4
+P 9950 5950
+F 0 "D412" H 9950 6215 50  0000 C CNN
+F 1 "D4.12" H 9950 6124 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 9950 5950 50  0001 C CNN
+F 3 "~" H 9950 5950 50  0001 C CNN
+	1    9950 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW58
+U 1 1 5F955CAE
+P 10300 5550
+F 0 "SW58" H 10300 5835 50  0000 C CNN
+F 1 "SW_Push" H 10300 5744 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 10300 5750 50  0001 C CNN
+F 3 "" H 10300 5750 50  0001 C CNN
+	1    10300 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D312
+U 1 1 5F955CB8
+P 9950 5550
+F 0 "D312" H 9950 5815 50  0000 C CNN
+F 1 "D3.12" H 9950 5724 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 9950 5550 50  0001 C CNN
+F 3 "~" H 9950 5550 50  0001 C CNN
+	1    9950 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 5950 10500 6350
+Text GLabel 9800 6350 0    50   Input ~ 0
+ROW5
+$Comp
+L Switch:SW_Push SW60
+U 1 1 5F955CC4
+P 10300 6350
+F 0 "SW60" H 10300 6635 50  0000 C CNN
+F 1 "SW_Push" H 10300 6544 50  0000 C CNN
+F 2 "custom:CherryMX_Choc_1u" H 10300 6550 50  0001 C CNN
+F 3 "" H 10300 6550 50  0001 C CNN
+	1    10300 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D512
+U 1 1 5F955CCE
+P 9950 6350
+F 0 "D512" H 9950 6615 50  0000 C CNN
+F 1 "D5.12" H 9950 6524 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 9950 6350 50  0001 C CNN
+F 3 "~" H 9950 6350 50  0001 C CNN
+	1    9950 6350
+	1    0    0    -1  
+$EndComp
+Connection ~ 10500 5950
+Text GLabel 5400 3600 0    50   Input ~ 0
+ROW5
 Text GLabel 5400 3700 0    50   Input ~ 0
-3.3V
+COL7
+Text GLabel 5400 3800 0    50   Input ~ 0
+COL8
+Text GLabel 5400 3900 0    50   Input ~ 0
+COL9
+Text GLabel 5400 4000 0    50   Input ~ 0
+COL10
+Text GLabel 6700 2500 2    50   Input ~ 0
+COL11
+Text GLabel 6700 2600 2    50   Input ~ 0
+COL12
 $EndSCHEMATC
