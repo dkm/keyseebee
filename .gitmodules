@@ -7,3 +7,6 @@
 [submodule "pcb/kicad/kbd"]
 	path = pcb/kicad/kbd
 	url = https://github.com/foostan/kbd.git
+[submodule "pcb/kicad/keyswitches.pretty"]
+	path = pcb/kicad/keyswitches.pretty
+	url = https://github.com/daprice/keyswitches.pretty
