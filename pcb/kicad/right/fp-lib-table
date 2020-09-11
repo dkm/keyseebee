@@ -4,4 +4,5 @@
   (lib (name kicad-harwin)(type KiCad)(uri ${KIPRJMOD}/../kicad-footprints/Connector_Harwin.pretty)(options "")(descr ""))
   (lib (name keebio)(type KiCad)(uri ${KIPRJMOD}/../Keebio-Parts.pretty)(options "")(descr ""))
   (lib (name custom)(type KiCad)(uri ${KIPRJMOD}/../custom.pretty)(options "")(descr ""))
+  (lib (name keyswitches)(type KiCad)(uri ${KIPRJMOD}/../keyswitches.pretty)(options "")(descr ""))
 )
