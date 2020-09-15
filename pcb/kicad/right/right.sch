@@ -1935,9 +1935,9 @@ Text GLabel 5400 4000 0    50   Input ~ 0
 COL7
 Text GLabel 5400 3900 0    50   Input ~ 0
 COL8
-Text GLabel 5400 3800 0    50   Input ~ 0
-COL9
 Text GLabel 5400 3700 0    50   Input ~ 0
+COL9
+Text GLabel 5400 3800 0    50   Input ~ 0
 COL10
 Text GLabel 6700 2600 2    50   Input ~ 0
 COL11
