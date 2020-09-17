@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F0:STM32F072CBTx U1
+L MCU_ST_STM32F0:STM32F072C8Tx U1
 U 1 1 5DEC39DF
 P 6100 2700
 F 0 "U1" H 6050 1114 50  0000 C CNN
@@ -396,75 +396,48 @@ $EndComp
 Connection ~ 10750 2400
 Text GLabel 5900 1200 0    50   Input ~ 0
 VBAT
-Text GLabel 6700 3400 2    50   Input ~ 0
-TX
-Text GLabel 6700 3500 2    50   Input ~ 0
-RX
-Text GLabel 7300 1800 0    50   Input ~ 0
+Text GLabel 7950 1900 0    50   Input ~ 0
 SWDIO
-Text GLabel 7300 1900 0    50   Input ~ 0
+Text GLabel 7950 2000 0    50   Input ~ 0
 SWDCLK
-Text GLabel 7300 1700 0    50   Input ~ 0
+Text GLabel 7950 1800 0    50   Input ~ 0
 3.3V
 $Comp
 L power:GND #PWR0108
 U 1 1 5ED50DF3
-P 7300 2000
-F 0 "#PWR0108" H 7300 1750 50  0001 C CNN
-F 1 "GND" V 7305 1872 50  0000 R CNN
-F 2 "" H 7300 2000 50  0001 C CNN
-F 3 "" H 7300 2000 50  0001 C CNN
-	1    7300 2000
+P 7950 2100
+F 0 "#PWR0108" H 7950 1850 50  0001 C CNN
+F 1 "GND" V 7955 1972 50  0000 R CNN
+F 2 "" H 7950 2100 50  0001 C CNN
+F 3 "" H 7950 2100 50  0001 C CNN
+	1    7950 2100
 	0    1    1    0   
 $EndComp
 Text GLabel 6700 2900 2    50   Input ~ 0
-PA4
+SPI1_NSS_PA4
 Text GLabel 6700 3100 2    50   Input ~ 0
-PA6
+SPI1_MISO_PA6
 Text GLabel 6700 3200 2    50   Input ~ 0
-PA7
+SPI1_MOSI_PA7
 Text GLabel 5400 3100 0    50   Input ~ 0
-PB6
+U1_TX_PB6
 Text GLabel 5400 3200 0    50   Input ~ 0
-PB7
-$Comp
-L Connector:Conn_01x12_Male J3
-U 1 1 5EDBCB44
-P 7500 2200
-F 0 "J3" H 7473 2173 50  0000 R CNN
-F 1 "Conn_01x12_Male" H 7473 2082 50  0000 R CNN
-F 2 "kicad-harwin:Harwin_M20-89012xx_1x12_P2.54mm_Horizontal" H 7500 2200 50  0001 C CNN
-F 3 "~" H 7500 2200 50  0001 C CNN
-	1    7500 2200
-	-1   0    0    -1  
-$EndComp
-Text GLabel 7300 2600 0    50   Input ~ 0
-PB6
-Text GLabel 7300 2700 0    50   Input ~ 0
-PB7
-Text GLabel 7300 2800 0    50   Input ~ 0
+U1_RX_PB7
+Text GLabel 7950 2500 0    50   Input ~ 0
 5V
 $Comp
 L power:GND #PWR0109
 U 1 1 5EDBE5BA
-P 7300 2500
-F 0 "#PWR0109" H 7300 2250 50  0001 C CNN
-F 1 "GND" V 7305 2372 50  0000 R CNN
-F 2 "" H 7300 2500 50  0001 C CNN
-F 3 "" H 7300 2500 50  0001 C CNN
-	1    7300 2500
+P 7950 2200
+F 0 "#PWR0109" H 7950 1950 50  0001 C CNN
+F 1 "GND" V 7955 2072 50  0000 R CNN
+F 2 "" H 7950 2200 50  0001 C CNN
+F 3 "" H 7950 2200 50  0001 C CNN
+	1    7950 2200
 	0    1    1    0   
 $EndComp
-Text GLabel 7300 2100 0    50   Input ~ 0
-PA4
-Text GLabel 7300 2200 0    50   Input ~ 0
-PA5
-Text GLabel 7300 2300 0    50   Input ~ 0
-PA6
-Text GLabel 7300 2400 0    50   Input ~ 0
-PA7
 Text GLabel 6700 3000 2    50   Input ~ 0
-PA5
+SPI1_SCK_PA5
 Text GLabel 850  800  0    50   Input ~ 0
 ROW1
 Text GLabel 850  2000 0    50   Input ~ 0
@@ -2291,4 +2264,21 @@ Wire Wire Line
 Connection ~ 10500 5950
 Wire Wire Line
 	10500 5950 10500 6350
+Text GLabel 7550 3500 3    50   Input ~ 0
+SPI1_MOSI_PA7
+$Comp
+L Connector:Conn_01x08_Male J3
+U 1 1 5EDBCB44
+P 8150 2100
+F 0 "J3" H 8123 2073 50  0000 R CNN
+F 1 "Conn_01x08_Male" H 8123 1982 50  0000 R CNN
+F 2 "kicad-harwin:Harwin_M20-89008xx_1x08_P2.54mm_Horizontal" H 8150 2100 50  0001 C CNN
+F 3 "~" H 8150 2100 50  0001 C CNN
+	1    8150 2100
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7950 2300 0    50   Input ~ 0
+U1_TX_PB6
+Text GLabel 7950 2400 0    50   Input ~ 0
+U1_RX_PB7
 $EndSCHEMATC
