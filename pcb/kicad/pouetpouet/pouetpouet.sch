@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_ST_STM32F0:STM32F072C8Tx U1
-U 1 1 5DEC39DF
-P 6100 2700
-F 0 "U1" H 6050 1114 50  0000 C CNN
-F 1 "STM32" H 6050 1023 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5500 1300 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 6100 2700 50  0001 C CNN
-	1    6100 2700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C2
 U 1 1 5DEC3C77
@@ -108,24 +97,12 @@ Wire Wire Line
 	6200 4550 6100 4550
 Connection ~ 6100 4550
 Connection ~ 6150 900 
-Wire Wire Line
-	6100 1200 6100 1000
-Wire Wire Line
-	6100 1000 6150 1000
-Wire Wire Line
-	6150 1000 6150 900 
 Connection ~ 5700 600 
 Connection ~ 5700 900 
 Wire Wire Line
 	5700 900  6150 900 
 Wire Wire Line
 	5700 600  6150 600 
-Wire Wire Line
-	6000 1200 6000 1100
-Wire Wire Line
-	6000 1100 5700 1100
-Wire Wire Line
-	5700 1100 5700 900 
 Connection ~ 6600 900 
 Connection ~ 7100 900 
 Wire Wire Line
@@ -137,16 +114,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 600  7100 600 
 Connection ~ 6600 600 
-Wire Wire Line
-	6600 900  6600 1050
-Wire Wire Line
-	6600 1050 6200 1050
-Wire Wire Line
-	6200 1050 6200 1200
-Wire Wire Line
-	6300 1200 7100 1200
-Wire Wire Line
-	7100 1200 7100 900 
 $Comp
 L power:GND #PWR0102
 U 1 1 5DEC9602
@@ -242,17 +209,6 @@ Wire Wire Line
 	4450 1600 5400 1600
 Connection ~ 4450 1600
 $Comp
-L Regulator_Linear:XC6206PxxxMR U2
-U 1 1 5DED53E7
-P 8250 900
-F 0 "U2" H 8250 1050 50  0000 C CNN
-F 1 "LDO" H 8250 1141 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8250 1125 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 8250 900 50  0001 C CNN
-	1    8250 900 
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0105
 U 1 1 5DEDB000
 P 10750 2400
@@ -264,9 +220,7 @@ F 3 "" H 10750 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11050 2400 10750 2400
-Wire Wire Line
-	10150 900  10100 900 
+	11050 2400 10900 2400
 $Comp
 L Device:R R7
 U 1 1 5DEDEA73
@@ -334,11 +288,6 @@ Connection ~ 7600 900
 Wire Wire Line
 	7600 900  7900 900 
 Wire Wire Line
-	7600 600  8250 600 
-Connection ~ 8250 600 
-Wire Wire Line
-	8650 600  8250 600 
-Wire Wire Line
 	7100 600  7600 600 
 Connection ~ 7100 600 
 Connection ~ 7600 600 
@@ -350,8 +299,6 @@ Wire Wire Line
 	4000 1600 4000 900 
 Wire Wire Line
 	4000 900  5700 900 
-Text GLabel 4000 900  0    50   Input ~ 0
-3.3V
 Text GLabel 5400 2500 0    50   Input ~ 0
 ROW1
 Text GLabel 5400 2600 0    50   Input ~ 0
@@ -372,13 +319,11 @@ Text GLabel 5400 2800 0    50   Input ~ 0
 COL5
 Text GLabel 6700 4000 2    50   Input ~ 0
 COL6
-Text GLabel 9250 900  1    50   Input ~ 0
-5V
-Text GLabel 10150 1500 0    50   Input ~ 0
+Text GLabel 8950 2850 0    50   Input ~ 0
 D-
 Text GLabel 6700 3600 2    50   Input ~ 0
 D-
-Text GLabel 10150 1700 0    50   Input ~ 0
+Text GLabel 8950 2950 0    50   Input ~ 0
 D+
 Text GLabel 6700 3700 2    50   Input ~ 0
 D+
@@ -394,25 +339,10 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 10900 1
 	-1   0    0    -1  
 $EndComp
 Connection ~ 10750 2400
-Text GLabel 5900 1200 0    50   Input ~ 0
-VBAT
 Text GLabel 7950 1900 0    50   Input ~ 0
 SWDIO
 Text GLabel 7950 2000 0    50   Input ~ 0
 SWDCLK
-Text GLabel 7950 1800 0    50   Input ~ 0
-3.3V
-$Comp
-L power:GND #PWR0108
-U 1 1 5ED50DF3
-P 7950 2100
-F 0 "#PWR0108" H 7950 1850 50  0001 C CNN
-F 1 "GND" V 7955 1972 50  0000 R CNN
-F 2 "" H 7950 2100 50  0001 C CNN
-F 3 "" H 7950 2100 50  0001 C CNN
-	1    7950 2100
-	0    1    1    0   
-$EndComp
 Text GLabel 6700 2900 2    50   Input ~ 0
 SPI1_NSS_PA4
 Text GLabel 6700 3100 2    50   Input ~ 0
@@ -423,8 +353,6 @@ Text GLabel 5400 3100 0    50   Input ~ 0
 U1_TX_PB6
 Text GLabel 5400 3200 0    50   Input ~ 0
 U1_RX_PB7
-Text GLabel 7950 2500 0    50   Input ~ 0
-5V
 $Comp
 L power:GND #PWR0109
 U 1 1 5EDBE5BA
@@ -1916,208 +1844,7 @@ Text GLabel 6700 2600 2    50   Input ~ 0
 COL11
 Text GLabel 6700 2500 2    50   Input ~ 0
 COL12
-$Comp
-L LED:WS2812B D2
-U 1 1 5F52D8D4
-P 8450 3500
-F 0 "D2" H 8794 3546 50  0000 L CNN
-F 1 "WS2812B" H 8794 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8500 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8550 3125 50  0001 L TNN
-	1    8450 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B D3
-U 1 1 5F538482
-P 9050 3500
-F 0 "D3" H 9394 3546 50  0000 L CNN
-F 1 "WS2812B" H 9394 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9100 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9150 3125 50  0001 L TNN
-	1    9050 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B D1
-U 1 1 5F539216
-P 7850 3500
-F 0 "D1" H 8194 3546 50  0000 L CNN
-F 1 "WS2812B" H 8194 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7900 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7950 3125 50  0001 L TNN
-	1    7850 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B D9
-U 1 1 5F539BE6
-P 12650 3500
-F 0 "D9" H 12994 3546 50  0000 L CNN
-F 1 "WS2812B" H 12994 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 12700 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 12750 3125 50  0001 L TNN
-	1    12650 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B D4
-U 1 1 5F53BC5E
-P 9650 3500
-F 0 "D4" H 9994 3546 50  0000 L CNN
-F 1 "WS2812B" H 9994 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9700 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9750 3125 50  0001 L TNN
-	1    9650 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B D6
-U 1 1 5F53D924
-P 10850 3500
-F 0 "D6" H 11194 3546 50  0000 L CNN
-F 1 "WS2812B" H 11194 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 10900 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 10950 3125 50  0001 L TNN
-	1    10850 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B D7
-U 1 1 5F53E32C
-P 11450 3500
-F 0 "D7" H 11794 3546 50  0000 L CNN
-F 1 "WS2812B" H 11794 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 11500 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 11550 3125 50  0001 L TNN
-	1    11450 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B D5
-U 1 1 5F53F66C
-P 10250 3500
-F 0 "D5" H 10594 3546 50  0000 L CNN
-F 1 "WS2812B" H 10594 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 10300 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 10350 3125 50  0001 L TNN
-	1    10250 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B D8
-U 1 1 5F540B7D
-P 12050 3500
-F 0 "D8" H 12394 3546 50  0000 L CNN
-F 1 "WS2812B" H 12394 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 12100 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 12150 3125 50  0001 L TNN
-	1    12050 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 3200 8450 3200
-Connection ~ 8450 3200
-Wire Wire Line
-	10100 2950 10100 3200
-Connection ~ 10100 3200
-$Comp
-L power:GND #PWR02
-U 1 1 5F6318AA
-P 10550 3950
-F 0 "#PWR02" H 10550 3700 50  0001 C CNN
-F 1 "GND" H 10555 3777 50  0000 C CNN
-F 2 "" H 10550 3950 50  0001 C CNN
-F 3 "" H 10550 3950 50  0001 C CNN
-	1    10550 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 3800 8450 3800
-Connection ~ 8450 3800
-Wire Wire Line
-	8450 3800 9050 3800
-Connection ~ 9050 3800
-Wire Wire Line
-	10550 3950 10550 3800
-Connection ~ 10550 3800
-$Comp
-L LED:WS2812B D10
-U 1 1 5F67C866
-P 13250 3500
-F 0 "D10" H 13594 3546 50  0000 L CNN
-F 1 "WS2812B" H 13594 3455 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 13300 3200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 13350 3125 50  0001 L TNN
-	1    13250 3500
-	1    0    0    -1  
-$EndComp
-Connection ~ 9650 3200
-Wire Wire Line
-	9650 3200 10100 3200
-Connection ~ 9650 3800
-Wire Wire Line
-	9050 3800 9650 3800
-Connection ~ 10250 3200
-Connection ~ 10250 3800
-Wire Wire Line
-	10250 3800 10550 3800
-Wire Wire Line
-	9600 3200 9650 3200
-Wire Wire Line
-	10100 3200 10250 3200
-Wire Wire Line
-	9650 3800 10250 3800
-Connection ~ 10850 3200
-Connection ~ 10850 3800
-Wire Wire Line
-	10250 3200 10850 3200
-Wire Wire Line
-	10550 3800 10850 3800
-Connection ~ 11450 3200
-Connection ~ 11450 3800
-Wire Wire Line
-	10850 3200 11450 3200
-Wire Wire Line
-	10850 3800 11450 3800
-Connection ~ 12050 3200
-Connection ~ 12050 3800
-Wire Wire Line
-	11450 3200 12050 3200
-Wire Wire Line
-	11450 3800 12050 3800
-Connection ~ 12650 3200
-Connection ~ 12650 3800
-Wire Wire Line
-	12050 3200 12650 3200
-Wire Wire Line
-	12050 3800 12650 3800
-Wire Wire Line
-	12650 3200 13250 3200
-Wire Wire Line
-	12650 3800 13250 3800
-Wire Wire Line
-	8450 3200 9050 3200
-Connection ~ 9050 3200
-Wire Wire Line
-	9050 3200 9650 3200
-Text GLabel 10100 2950 1    50   Input ~ 0
-5V
 Connection ~ 8650 900 
-$Comp
-L power:+5V #PWR0107
-U 1 1 5F8601A1
-P 10100 900
-F 0 "#PWR0107" H 10100 750 50  0001 C CNN
-F 1 "+5V" H 10115 1073 50  0000 C CNN
-F 2 "" H 10100 900 50  0001 C CNN
-F 3 "" H 10100 900 50  0001 C CNN
-	1    10100 900 
-	1    0    0    -1  
-$EndComp
-Connection ~ 10100 900 
-Wire Wire Line
-	10100 900  8650 900 
 $Comp
 L power:+3.3V #PWR0110
 U 1 1 5F873044
@@ -2264,8 +1991,6 @@ Wire Wire Line
 Connection ~ 10500 5950
 Wire Wire Line
 	10500 5950 10500 6350
-Text GLabel 7550 3500 3    50   Input ~ 0
-SPI1_MOSI_PA7
 $Comp
 L Connector:Conn_01x08_Male J3
 U 1 1 5EDBCB44
@@ -2281,4 +2006,239 @@ Text GLabel 7950 2300 0    50   Input ~ 0
 U1_TX_PB6
 Text GLabel 7950 2400 0    50   Input ~ 0
 U1_RX_PB7
+Text GLabel 5450 1200 1    50   Input ~ 0
+NRST
+Text GLabel 7950 2100 0    50   Input ~ 0
+NRST
+$Comp
+L MCU_ST_STM32F0:STM32F072C8Tx U1
+U 1 1 5DEC39DF
+P 6100 2700
+F 0 "U1" H 6050 1114 50  0000 C CNN
+F 1 "STM32" H 6050 1023 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5500 1300 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 6100 2700 50  0001 C CNN
+	1    6100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1200 6000 1200
+Connection ~ 6000 1200
+Wire Wire Line
+	6000 1200 6100 1200
+Connection ~ 6100 1200
+Wire Wire Line
+	6100 1200 6200 1200
+Connection ~ 6200 1200
+Wire Wire Line
+	6200 1200 6300 1200
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5F6DBFC6
+P 6500 1200
+F 0 "#PWR0107" H 6500 1050 50  0001 C CNN
+F 1 "+3.3V" H 6515 1373 50  0000 C CNN
+F 2 "" H 6500 1200 50  0001 C CNN
+F 3 "" H 6500 1200 50  0001 C CNN
+	1    6500 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1200 6500 1200
+Connection ~ 6300 1200
+Wire Wire Line
+	5450 1200 5450 1400
+Wire Wire Line
+	5450 1400 5400 1400
+Connection ~ 5400 1400
+Wire Wire Line
+	8650 900  9400 900 
+$Comp
+L Device:Polyfuse F1
+U 1 1 5F6F35E2
+P 9850 750
+F 0 "F1" V 9625 750 50  0000 C CNN
+F 1 "500mA" V 9716 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9900 550 50  0001 L CNN
+F 3 "~" H 9850 750 50  0001 C CNN
+	1    9850 750 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 900  10150 750 
+Wire Wire Line
+	10150 750  10000 750 
+Wire Wire Line
+	9700 750  9600 750 
+Wire Wire Line
+	9600 750  9600 900 
+$Comp
+L power:+5V #PWR0108
+U 1 1 5F7056DE
+P 9400 900
+F 0 "#PWR0108" H 9400 750 50  0001 C CNN
+F 1 "+5V" H 9415 1073 50  0000 C CNN
+F 2 "" H 9400 900 50  0001 C CNN
+F 3 "" H 9400 900 50  0001 C CNN
+	1    9400 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F705EB5
+P 9700 750
+F 0 "#FLG0101" H 9700 825 50  0001 C CNN
+F 1 "PWR_FLAG" H 9700 923 50  0000 C CNN
+F 2 "" H 9700 750 50  0001 C CNN
+F 3 "~" H 9700 750 50  0001 C CNN
+	1    9700 750 
+	1    0    0    -1  
+$EndComp
+Connection ~ 9700 750 
+Connection ~ 9400 900 
+Wire Wire Line
+	9400 900  9600 900 
+NoConn ~ 6700 2700
+NoConn ~ 6700 2800
+NoConn ~ 6700 3300
+NoConn ~ 6700 3400
+NoConn ~ 6700 3500
+NoConn ~ 5400 2100
+NoConn ~ 5400 2200
+NoConn ~ 5400 2300
+NoConn ~ 5400 1900
+NoConn ~ 5400 1800
+NoConn ~ 10150 2000
+NoConn ~ 10150 2100
+Wire Wire Line
+	7600 600  8650 600 
+$Comp
+L Regulator_Linear:TLV70233_SOT23-5 U2
+U 1 1 5F7587A5
+P 8250 1100
+F 0 "U2" H 8250 1349 50  0000 C CNN
+F 1 "TLV70233_SOT23-5" H 8250 1440 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8250 1425 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv702.pdf" H 8250 1150 50  0001 C CNN
+	1    8250 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8550 900  8550 1100
+Connection ~ 8550 1100
+Wire Wire Line
+	8550 1100 8550 1200
+Wire Wire Line
+	7950 1200 7950 900 
+$Comp
+L power:GND #PWR0111
+U 1 1 5F763FFF
+P 8250 800
+F 0 "#PWR0111" H 8250 550 50  0001 C CNN
+F 1 "GND" H 8255 627 50  0000 C CNN
+F 2 "" H 8250 800 50  0001 C CNN
+F 3 "" H 8250 800 50  0001 C CNN
+	1    8250 800 
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 12050 2000 1650 850 
+U 5F7975A8
+F0 "backlight" 50
+F1 "bac.light.sch" 50
+$EndSheet
+$Comp
+L NUF2221W1T2G:NUF2221W1T2G IC1
+U 1 1 5F7D8475
+P 9350 3050
+F 0 "IC1" H 9350 3050 50  0001 L BNN
+F 1 "NUF2221W1T2G" H 9350 3050 50  0001 L BNN
+F 2 "SOT-363" H 9350 3050 50  0001 L BNN
+F 3 "Good" H 9350 3050 50  0001 L BNN
+F 4 "SOT-363 ON Semiconductor" H 9350 3050 50  0001 L BNN "Field4"
+F 5 "NUF2221W1T2G" H 9350 3050 50  0001 L BNN "Field5"
+F 6 "0.27 USD" H 9350 3050 50  0001 L BNN "Field6"
+F 7 "NUF2221W1T2G Series 8 V USB Upstream Terminator with ESD Protection - SC-88" H 9350 3050 50  0001 L BNN "Field7"
+F 8 "ON Semiconductor" H 9350 3050 50  0001 L BNN "Field8"
+	1    9350 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10150 1400 9950 1400
+Wire Wire Line
+	9950 1400 9950 2850
+Wire Wire Line
+	9950 2850 9750 2850
+Connection ~ 10150 1400
+Wire Wire Line
+	10150 1700 10000 1700
+Wire Wire Line
+	10000 1700 10000 2950
+Wire Wire Line
+	10000 2950 9750 2950
+Connection ~ 10150 1700
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 5F7F2AB7
+P 10250 2950
+F 0 "#PWR0112" H 10250 2800 50  0001 C CNN
+F 1 "+3.3V" H 10265 3123 50  0000 C CNN
+F 2 "" H 10250 2950 50  0001 C CNN
+F 3 "" H 10250 2950 50  0001 C CNN
+	1    10250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2950 10250 3150
+Wire Wire Line
+	10250 3150 9750 3150
+$Comp
+L power:GND #PWR0113
+U 1 1 5F7F7786
+P 9850 2650
+F 0 "#PWR0113" H 9850 2400 50  0001 C CNN
+F 1 "GND" H 9855 2477 50  0000 C CNN
+F 2 "" H 9850 2650 50  0001 C CNN
+F 3 "" H 9850 2650 50  0001 C CNN
+	1    9850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2650 9850 2650
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 5F82C44C
+P 7950 1800
+F 0 "#PWR0117" H 7950 1650 50  0001 C CNN
+F 1 "+3.3V" H 7965 1973 50  0000 C CNN
+F 2 "" H 7950 1800 50  0001 C CNN
+F 3 "" H 7950 1800 50  0001 C CNN
+	1    7950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0118
+U 1 1 5F82CE98
+P 7950 2500
+F 0 "#PWR0118" H 7950 2350 50  0001 C CNN
+F 1 "+5V" H 7965 2673 50  0000 C CNN
+F 2 "" H 7950 2500 50  0001 C CNN
+F 3 "" H 7950 2500 50  0001 C CNN
+	1    7950 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F6C2380
+P 10900 2400
+F 0 "#FLG0102" H 10900 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 10900 2573 50  0000 C CNN
+F 2 "" H 10900 2400 50  0001 C CNN
+F 3 "~" H 10900 2400 50  0001 C CNN
+	1    10900 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 10900 2400
+Wire Wire Line
+	10900 2400 10750 2400
 $EndSCHEMATC

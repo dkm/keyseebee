@@ -10,3 +10,9 @@
 [submodule "pcb/kicad/keyswitches.pretty"]
 	path = pcb/kicad/keyswitches.pretty
 	url = https://github.com/daprice/keyswitches.pretty
+[submodule "pcb/kicad/digikey-kicad-library"]
+	path = pcb/kicad/digikey-kicad-library
+	url = https://github.com/digikey/digikey-kicad-library.git
+[submodule "pcb/kicad/jmdaly_keyboard_parts.pretty"]
+	path = pcb/kicad/jmdaly_keyboard_parts.pretty
+	url = https://gitlab.com/jmdaly/jmdaly_keyboard_parts.pretty.git

@@ -5,4 +5,6 @@
   (lib (name keebio)(type KiCad)(uri ${KIPRJMOD}/../Keebio-Parts.pretty)(options "")(descr ""))
   (lib (name custom)(type KiCad)(uri ${KIPRJMOD}/../custom.pretty)(options "")(descr ""))
   (lib (name keyswitches)(type KiCad)(uri ${KIPRJMOD}/../keyswitches.pretty)(options "")(descr ""))
+  (lib (name jmdaly)(type KiCad)(uri /home/dkm/git/keyseebee/pcb/kicad/jmdaly_keyboard_parts.pretty)(options "")(descr ""))
+  (lib (name digikey)(type KiCad)(uri /home/dkm/git/keyseebee/pcb/kicad/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
 )
