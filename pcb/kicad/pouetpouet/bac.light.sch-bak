@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED:WS2812B D2
+U 1 1 5F7B7CA6
+P 5050 3650
+F 0 "D2" H 5394 3696 50  0000 L CNN
+F 1 "WS2812B" H 5394 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5100 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5150 3275 50  0001 L TNN
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D3
+U 1 1 5F7B7CAC
+P 5650 3650
+F 0 "D3" H 5994 3696 50  0000 L CNN
+F 1 "WS2812B" H 5994 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5700 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5750 3275 50  0001 L TNN
+	1    5650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D1
+U 1 1 5F7B7CB2
+P 4450 3650
+F 0 "D1" H 4794 3696 50  0000 L CNN
+F 1 "WS2812B" H 4794 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 4500 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4550 3275 50  0001 L TNN
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D9
+U 1 1 5F7B7CB8
+P 9250 3650
+F 0 "D9" H 9594 3696 50  0000 L CNN
+F 1 "WS2812B" H 9594 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9300 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9350 3275 50  0001 L TNN
+	1    9250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D4
+U 1 1 5F7B7CBE
+P 6250 3650
+F 0 "D4" H 6594 3696 50  0000 L CNN
+F 1 "WS2812B" H 6594 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6300 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6350 3275 50  0001 L TNN
+	1    6250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D6
+U 1 1 5F7B7CC4
+P 7450 3650
+F 0 "D6" H 7794 3696 50  0000 L CNN
+F 1 "WS2812B" H 7794 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 7500 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 7550 3275 50  0001 L TNN
+	1    7450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D7
+U 1 1 5F7B7CCA
+P 8050 3650
+F 0 "D7" H 8394 3696 50  0000 L CNN
+F 1 "WS2812B" H 8394 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8100 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8150 3275 50  0001 L TNN
+	1    8050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D5
+U 1 1 5F7B7CD0
+P 6850 3650
+F 0 "D5" H 7194 3696 50  0000 L CNN
+F 1 "WS2812B" H 7194 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 6900 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 6950 3275 50  0001 L TNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B D8
+U 1 1 5F7B7CD6
+P 8650 3650
+F 0 "D8" H 8994 3696 50  0000 L CNN
+F 1 "WS2812B" H 8994 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 8700 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 8750 3275 50  0001 L TNN
+	1    8650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3350 5050 3350
+Connection ~ 5050 3350
+Wire Wire Line
+	6700 3100 6700 3350
+Connection ~ 6700 3350
+$Comp
+L power:GND #PWR0114
+U 1 1 5F7B7CE0
+P 7150 4100
+F 0 "#PWR0114" H 7150 3850 50  0001 C CNN
+F 1 "GND" H 7155 3927 50  0000 C CNN
+F 2 "" H 7150 4100 50  0001 C CNN
+F 3 "" H 7150 4100 50  0001 C CNN
+	1    7150 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3950 5050 3950
+Connection ~ 5050 3950
+Wire Wire Line
+	5050 3950 5650 3950
+Connection ~ 5650 3950
+Wire Wire Line
+	7150 4100 7150 3950
+Connection ~ 7150 3950
+$Comp
+L LED:WS2812B D10
+U 1 1 5F7B7CEC
+P 9850 3650
+F 0 "D10" H 10194 3696 50  0000 L CNN
+F 1 "WS2812B" H 10194 3605 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 9900 3350 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 9950 3275 50  0001 L TNN
+	1    9850 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 3350
+Wire Wire Line
+	6250 3350 6700 3350
+Connection ~ 6250 3950
+Wire Wire Line
+	5650 3950 6250 3950
+Connection ~ 6850 3350
+Connection ~ 6850 3950
+Wire Wire Line
+	6850 3950 7150 3950
+Wire Wire Line
+	6700 3350 6850 3350
+Wire Wire Line
+	6250 3950 6850 3950
+Connection ~ 7450 3350
+Connection ~ 7450 3950
+Wire Wire Line
+	6850 3350 7450 3350
+Wire Wire Line
+	7150 3950 7450 3950
+Connection ~ 8050 3350
+Connection ~ 8050 3950
+Wire Wire Line
+	7450 3350 8050 3350
+Wire Wire Line
+	7450 3950 8050 3950
+Connection ~ 8650 3350
+Connection ~ 8650 3950
+Wire Wire Line
+	8050 3350 8650 3350
+Wire Wire Line
+	8050 3950 8650 3950
+Connection ~ 9250 3350
+Connection ~ 9250 3950
+Wire Wire Line
+	8650 3350 9250 3350
+Wire Wire Line
+	8650 3950 9250 3950
+Wire Wire Line
+	9250 3350 9850 3350
+Wire Wire Line
+	9250 3950 9850 3950
+Wire Wire Line
+	5050 3350 5650 3350
+Connection ~ 5650 3350
+Text GLabel 2800 3000 0    50   Input ~ 0
+SPI1_MOSI_PA7
+Wire Wire Line
+	6200 3350 6250 3350
+Wire Wire Line
+	5650 3350 6250 3350
+$Comp
+L 74LVC1G34:74LVC1G34 U3
+U 1 1 5F7BC305
+P 3250 3000
+F 0 "U3" H 3744 3046 50  0000 L CNN
+F 1 "74LVC1G34" H 3744 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 3250 3000 50  0001 C CNN
+F 3 "" H 3250 3000 50  0001 C CNN
+	1    3250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0115
+U 1 1 5F7BE04E
+P 3200 2800
+F 0 "#PWR0115" H 3200 2650 50  0001 C CNN
+F 1 "+5V" H 3215 2973 50  0000 C CNN
+F 2 "" H 3200 2800 50  0001 C CNN
+F 3 "" H 3200 2800 50  0001 C CNN
+	1    3200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5F7BE6C0
+P 3200 3200
+F 0 "#PWR0116" H 3200 2950 50  0001 C CNN
+F 1 "GND" H 3205 3027 50  0000 C CNN
+F 2 "" H 3200 3200 50  0001 C CNN
+F 3 "" H 3200 3200 50  0001 C CNN
+	1    3200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F7BEE79
+P 3700 3150
+F 0 "R2" H 3770 3196 50  0000 L CNN
+F 1 "470" H 3770 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 3150 50  0001 C CNN
+F 3 "~" H 3700 3150 50  0001 C CNN
+	1    3700 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3300 3700 3650
+Wire Wire Line
+	3700 3650 4150 3650
+NoConn ~ 10150 3650
+$EndSCHEMATC
