@@ -62,7 +62,7 @@ L Device:C C7
 U 1 1 5DEC3DF1
 P 8650 750
 F 0 "C7" H 8765 796 50  0000 L CNN
-F 1 "1µF" H 8765 705 50  0000 L CNN
+F 1 "4.7µF" H 8765 705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8688 600 50  0001 C CNN
 F 3 "~" H 8650 750 50  0001 C CNN
 	1    8650 750 
@@ -98,7 +98,6 @@ Wire Wire Line
 Connection ~ 6100 4550
 Connection ~ 6150 900 
 Connection ~ 5700 600 
-Connection ~ 5700 900 
 Wire Wire Line
 	5700 900  6150 900 
 Wire Wire Line
@@ -278,7 +277,7 @@ L Device:C C6
 U 1 1 5DEE73ED
 P 7600 750
 F 0 "C6" H 7715 796 50  0000 L CNN
-F 1 "1µF" H 7715 705 50  0000 L CNN
+F 1 "4.7µF" H 7715 705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7638 600 50  0001 C CNN
 F 3 "~" H 7600 750 50  0001 C CNN
 	1    7600 750 
@@ -297,8 +296,6 @@ Text GLabel 6700 3900 2    50   Input ~ 0
 SWDCLK
 Wire Wire Line
 	4000 1600 4000 900 
-Wire Wire Line
-	4000 900  5700 900 
 Text GLabel 5400 2500 0    50   Input ~ 0
 ROW1
 Text GLabel 5400 2600 0    50   Input ~ 0
@@ -2305,4 +2302,15 @@ F 3 "" H 12300 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 13250 4350
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F6ECCE1
+P 4000 900
+F 0 "#PWR?" H 4000 750 50  0001 C CNN
+F 1 "+3.3V" H 4015 1073 50  0000 C CNN
+F 2 "" H 4000 900 50  0001 C CNN
+F 3 "" H 4000 900 50  0001 C CNN
+	1    4000 900 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
