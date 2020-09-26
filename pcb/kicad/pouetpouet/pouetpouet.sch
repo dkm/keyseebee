@@ -316,11 +316,11 @@ Text GLabel 5400 2800 0    50   Input ~ 0
 COL5
 Text GLabel 6700 4000 2    50   Input ~ 0
 COL6
-Text GLabel 8950 2850 0    50   Input ~ 0
+Text GLabel 8950 1950 0    50   Input ~ 0
 D-
 Text GLabel 6700 3600 2    50   Input ~ 0
 D-
-Text GLabel 8950 2950 0    50   Input ~ 0
+Text GLabel 8950 2100 0    50   Input ~ 0
 D+
 Text GLabel 6700 3700 2    50   Input ~ 0
 D+
@@ -1989,12 +1989,12 @@ Connection ~ 10500 5950
 Wire Wire Line
 	10500 5950 10500 6350
 $Comp
-L Connector:Conn_01x08_Male J3
+L Connector:Conn_01x07_Male J3
 U 1 1 5EDBCB44
 P 13450 3950
 F 0 "J3" H 13423 3923 50  0000 R CNN
-F 1 "Conn_01x08_Male" H 13423 3832 50  0000 R CNN
-F 2 "kicad-harwin:Harwin_M20-89008xx_1x08_P2.54mm_Horizontal" H 13450 3950 50  0001 C CNN
+F 1 "Conn_01x07_Male" H 13423 3832 50  0000 R CNN
+F 2 "kicad-harwin:Harwin_M20-89007xx_1x07_P2.54mm_Horizontal" H 13450 3950 50  0001 C CNN
 F 3 "~" H 13450 3950 50  0001 C CNN
 	1    13450 3950
 	-1   0    0    -1  
@@ -2144,64 +2144,10 @@ U 5F7975A8
 F0 "backlight" 50
 F1 "bac.light.sch" 50
 $EndSheet
-$Comp
-L NUF2221W1T2G:NUF2221W1T2G IC1
-U 1 1 5F7D8475
-P 9350 3050
-F 0 "IC1" H 9350 3050 50  0001 L BNN
-F 1 "NUF2221W1T2G" H 9350 3050 50  0001 L BNN
-F 2 "SOT-363" H 9350 3050 50  0001 L BNN
-F 3 "Good" H 9350 3050 50  0001 L BNN
-F 4 "SOT-363 ON Semiconductor" H 9350 3050 50  0001 L BNN "Field4"
-F 5 "NUF2221W1T2G" H 9350 3050 50  0001 L BNN "Field5"
-F 6 "0.27 USD" H 9350 3050 50  0001 L BNN "Field6"
-F 7 "NUF2221W1T2G Series 8 V USB Upstream Terminator with ESD Protection - SC-88" H 9350 3050 50  0001 L BNN "Field7"
-F 8 "ON Semiconductor" H 9350 3050 50  0001 L BNN "Field8"
-	1    9350 3050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10150 1400 9950 1400
-Wire Wire Line
-	9950 1400 9950 2850
-Wire Wire Line
-	9950 2850 9750 2850
 Connection ~ 10150 1400
 Wire Wire Line
 	10150 1700 10000 1700
-Wire Wire Line
-	10000 1700 10000 2950
-Wire Wire Line
-	10000 2950 9750 2950
 Connection ~ 10150 1700
-$Comp
-L power:+3.3V #PWR0112
-U 1 1 5F7F2AB7
-P 10250 2950
-F 0 "#PWR0112" H 10250 2800 50  0001 C CNN
-F 1 "+3.3V" H 10265 3123 50  0000 C CNN
-F 2 "" H 10250 2950 50  0001 C CNN
-F 3 "" H 10250 2950 50  0001 C CNN
-	1    10250 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 2950 10250 3150
-Wire Wire Line
-	10250 3150 9750 3150
-$Comp
-L power:GND #PWR0113
-U 1 1 5F7F7786
-P 9850 2650
-F 0 "#PWR0113" H 9850 2400 50  0001 C CNN
-F 1 "GND" H 9855 2477 50  0000 C CNN
-F 2 "" H 9850 2650 50  0001 C CNN
-F 3 "" H 9850 2650 50  0001 C CNN
-	1    9850 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 2650 9850 2650
 $Comp
 L power:+3.3V #PWR0117
 U 1 1 5F82C44C
@@ -2301,16 +2247,170 @@ F 3 "" H 12300 5200 50  0001 C CNN
 	1    12300 5200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 13250 4350
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR06
 U 1 1 5F6ECCE1
 P 4000 900
-F 0 "#PWR?" H 4000 750 50  0001 C CNN
+F 0 "#PWR06" H 4000 750 50  0001 C CNN
 F 1 "+3.3V" H 4015 1073 50  0000 C CNN
 F 2 "" H 4000 900 50  0001 C CNN
 F 3 "" H 4000 900 50  0001 C CNN
 	1    4000 900 
 	1    0    0    -1  
 $EndComp
+$Comp
+L Power_Protection:PRTR5V0U2X D20
+U 1 1 5F83794A
+P 9500 3100
+F 0 "D20" H 10044 3146 50  0000 L CNN
+F 1 "PRTR5V0U2X" H 10044 3055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 9560 3100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 9560 3100 50  0001 C CNN
+	1    9500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 1400 9650 1950
+Wire Wire Line
+	9650 1950 9100 1950
+Wire Wire Line
+	9650 1400 10150 1400
+Wire Wire Line
+	10000 1700 10000 2100
+Wire Wire Line
+	10000 2100 9750 2100
+Wire Wire Line
+	9000 3100 9000 2350
+Wire Wire Line
+	9000 2350 9100 2350
+Wire Wire Line
+	9100 2350 9100 1950
+Connection ~ 9100 1950
+Wire Wire Line
+	9100 1950 8950 1950
+Wire Wire Line
+	10000 3100 10000 2300
+Wire Wire Line
+	10000 2300 9750 2300
+Wire Wire Line
+	9750 2300 9750 2100
+Connection ~ 9750 2100
+Wire Wire Line
+	9750 2100 8950 2100
+$Comp
+L power:GND #PWR09
+U 1 1 5F860520
+P 9500 3600
+F 0 "#PWR09" H 9500 3350 50  0001 C CNN
+F 1 "GND" H 9505 3427 50  0000 C CNN
+F 2 "" H 9500 3600 50  0001 C CNN
+F 3 "" H 9500 3600 50  0001 C CNN
+	1    9500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5F86168C
+P 9500 2600
+F 0 "#PWR08" H 9500 2450 50  0001 C CNN
+F 1 "+5V" H 9515 2773 50  0000 C CNN
+F 2 "" H 9500 2600 50  0001 C CNN
+F 3 "" H 9500 2600 50  0001 C CNN
+	1    9500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5F8DEEE6
+P 8050 7900
+F 0 "H5" H 8150 7949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8150 7858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 8050 7900 50  0001 C CNN
+F 3 "~" H 8050 7900 50  0001 C CNN
+	1    8050 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 5F8DFB89
+P 8900 7900
+F 0 "H6" H 9000 7949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9000 7858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 8900 7900 50  0001 C CNN
+F 3 "~" H 8900 7900 50  0001 C CNN
+	1    8900 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F8E00D7
+P 6150 7900
+F 0 "H3" H 6250 7949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6250 7858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 6150 7900 50  0001 C CNN
+F 3 "~" H 6150 7900 50  0001 C CNN
+	1    6150 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F8E034B
+P 4400 7900
+F 0 "H1" H 4500 7949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4500 7858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 4400 7900 50  0001 C CNN
+F 3 "~" H 4400 7900 50  0001 C CNN
+	1    4400 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F8E0476
+P 5250 7900
+F 0 "H2" H 5350 7949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5350 7858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 5250 7900 50  0001 C CNN
+F 3 "~" H 5250 7900 50  0001 C CNN
+	1    5250 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F8E05B4
+P 7100 7900
+F 0 "H4" H 7200 7949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 7200 7858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7100 7900 50  0001 C CNN
+F 3 "~" H 7100 7900 50  0001 C CNN
+	1    7100 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 8000 8050 8000
+Connection ~ 5250 8000
+Wire Wire Line
+	5250 8000 4650 8000
+Connection ~ 6150 8000
+Wire Wire Line
+	6150 8000 5250 8000
+Connection ~ 7100 8000
+Wire Wire Line
+	7100 8000 6150 8000
+Connection ~ 8050 8000
+Wire Wire Line
+	8050 8000 7100 8000
+$Comp
+L power:GND #PWR07
+U 1 1 5F90046F
+P 4650 8000
+F 0 "#PWR07" H 4650 7750 50  0001 C CNN
+F 1 "GND" H 4655 7827 50  0000 C CNN
+F 2 "" H 4650 8000 50  0001 C CNN
+F 3 "" H 4650 8000 50  0001 C CNN
+	1    4650 8000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 8000
+Wire Wire Line
+	4650 8000 4400 8000
 $EndSCHEMATC
