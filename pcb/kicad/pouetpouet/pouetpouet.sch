@@ -340,10 +340,6 @@ Text GLabel 13250 3750 0    50   Input ~ 0
 SWDIO
 Text GLabel 13250 3850 0    50   Input ~ 0
 SWDCLK
-Text GLabel 6700 2900 2    50   Input ~ 0
-SPI1_NSS_PA4
-Text GLabel 6700 3100 2    50   Input ~ 0
-SPI1_MISO_PA6
 Text GLabel 6700 3200 2    50   Input ~ 0
 SPI1_MOSI_PA7
 Text GLabel 5400 3100 0    50   Input ~ 0
@@ -361,8 +357,6 @@ F 3 "" H 13250 4050 50  0001 C CNN
 	1    13250 4050
 	0    1    1    0   
 $EndComp
-Text GLabel 6700 3000 2    50   Input ~ 0
-SPI1_SCK_PA5
 Text GLabel 850  800  0    50   Input ~ 0
 ROW1
 Text GLabel 850  2000 0    50   Input ~ 0
@@ -2064,7 +2058,7 @@ $EndComp
 Wire Wire Line
 	10150 900  10150 750 
 Wire Wire Line
-	10150 750  10000 750 
+	10150 750  10050 750 
 Wire Wire Line
 	9700 750  9600 750 
 Wire Wire Line
@@ -2298,17 +2292,6 @@ F 3 "" H 9500 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR08
-U 1 1 5F86168C
-P 9500 2600
-F 0 "#PWR08" H 9500 2450 50  0001 C CNN
-F 1 "+5V" H 9515 2773 50  0000 C CNN
-F 2 "" H 9500 2600 50  0001 C CNN
-F 3 "" H 9500 2600 50  0001 C CNN
-	1    9500 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H5
 U 1 1 5F8DEEE6
 P 8050 7900
@@ -2411,10 +2394,10 @@ Wire Wire Line
 Wire Wire Line
 	12200 4700 12200 4750
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0112
 U 1 1 5FA2536C
 P 12650 5250
-F 0 "#PWR?" H 12650 5100 50  0001 C CNN
+F 0 "#PWR0112" H 12650 5100 50  0001 C CNN
 F 1 "+3.3V" H 12665 5423 50  0000 C CNN
 F 2 "" H 12650 5250 50  0001 C CNN
 F 3 "" H 12650 5250 50  0001 C CNN
@@ -2425,4 +2408,50 @@ Wire Wire Line
 	12400 5200 12400 5250
 Wire Wire Line
 	12400 5250 12650 5250
+$Comp
+L power:VCC #PWR0113
+U 1 1 5FAF45B5
+P 10150 750
+F 0 "#PWR0113" H 10150 600 50  0001 C CNN
+F 1 "VCC" H 10165 923 50  0000 C CNN
+F 2 "" H 10150 750 50  0001 C CNN
+F 3 "" H 10150 750 50  0001 C CNN
+	1    10150 750 
+	1    0    0    -1  
+$EndComp
+Connection ~ 10150 750 
+$Comp
+L power:VCC #PWR0118
+U 1 1 5FAF704C
+P 9500 2600
+F 0 "#PWR0118" H 9500 2450 50  0001 C CNN
+F 1 "VCC" H 9515 2773 50  0000 C CNN
+F 2 "" H 9500 2600 50  0001 C CNN
+F 3 "" H 9500 2600 50  0001 C CNN
+	1    9500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FB188CD
+P 10050 750
+F 0 "#FLG0103" H 10050 825 50  0001 C CNN
+F 1 "PWR_FLAG" H 10050 923 50  0000 C CNN
+F 2 "" H 10050 750 50  0001 C CNN
+F 3 "~" H 10050 750 50  0001 C CNN
+	1    10050 750 
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 750 
+Wire Wire Line
+	10050 750  10000 750 
+Text Notes 6750 2950 0    50   ~ 0
+SPI1_NSS_PA4
+Text Notes 6750 3050 0    50   ~ 0
+SPI1_SCK_PA5
+Text Notes 6750 3150 0    50   ~ 0
+SPI1_MISO_PA6
+NoConn ~ 6700 2900
+NoConn ~ 6700 3000
+NoConn ~ 6700 3100
 $EndSCHEMATC
