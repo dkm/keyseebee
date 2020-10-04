@@ -20,14 +20,12 @@ pure rust firmware.
 ## Bill Of Materials
 
 |Item                                                                      |Package|Qty|Remarks                                |Price |
+|--------------------------------------------------------------------------|-------|--:|---------------------------------------|-----:|
+
 
 ## Compiling and flashing
 
 Install the complete toolchain and utils:
-|--------------------------------------------------------------------------|-------|--:|---------------------------------------|-----:|
-|[PCB]                                                                     |       |  1|Ordered at [JLCPCB](https://jlcpcb.com)|      |
-|[USB-C connector](https://www.aliexpress.com/item/33056042016.html)       |16 pins|  2|                                       | 1.44€|
-
 
 ```shell
 curl https://sh.rustup.rs -sSf | sh
