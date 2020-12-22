@@ -10,7 +10,7 @@ stm32f0xx-hal = { git = "https://github.com/dkm/stm32f0xx-hal/", features = ["rt
 cortex-m = "0.6"
 cortex-m-rt = { version = "0.6.10", features = ["device"] }
 panic-halt = "0.2.0"
-keyberon = { git = "https://github.com/TeXitoi/keyberon" }
+keyberon = { git = "https://github.com/dkm/keyberon" }
 cortex-m-rtic = "0.5"
 generic-array = "0.13"
 embedded-hal = "0.2"
