@@ -8,16 +8,16 @@ edition = "2018"
 stm32f0xx-hal = { git = "https://github.com/dkm/stm32f0xx-hal/", features = ["rt", "stm32f072", "stm32-usbd"] }
 ##{ version = "0.17.0", features = ["rt", "stm32f072", "stm32-usbd"] }
 cortex-m = "0.6"
-cortex-m-rt = { version = "0.6.10", features = ["device"] }
-panic-halt = "0.2.0"
+cortex-m-rt = { version = "0.6", features = ["device"] }
+panic-halt = "0.2"
 keyberon = { git = "https://github.com/dkm/keyberon" }
 cortex-m-rtic = "0.5"
 generic-array = "0.13"
 embedded-hal = "0.2"
-usb-device = "0.2.0"
-nb = "1.0.0"
-ws2812-spi = "0.3.0"
-smart-leds = "0.3.0"
+usb-device = "0.2"
+nb = "1.0"
+ws2812-spi = "0.3"
+smart-leds = "0.3"
 
 [profile.release]
 lto = true
